@@ -1,0 +1,84 @@
+{
+ "Products": [
+  {
+   "name": "72 HR Hydrating Probiotic Gel Moisturizer For Face With Hyaluronic & Rice Water| For Healthy,Soft Skin| Combination, Dry Skin| Women & Men",
+   "originalPrice": "Rs: 745.00",
+   "discountPrice": "Rs: 670.05",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "10% Niacinamide Face Serum With Zinc & Antioxidants| Treats Acne, Dark Spots & Acne Scars| For Oily, Sensitive ,Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "CICA Niacinamide Night Gel With Green Tea, Tea Tree Oil & Hyaluronic| Reduces Acne & Dark Spots | Oily, Acne Prone & Sensitive Skin| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.01",
+   "discount": "Save 5%"
+  },
+  {
+   "name": "10% AHA + 2% BHA EXFOLIATING GLOW HYDRO PEEL",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.00",
+   "discount": "Save 5%"
+  },
+  {
+   "name": "Salicylic & French Green Clay Face Mask With Match Tea| Reduces Acne, Dark Spots & Blemishes| Oily & Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 660.04",
+   "discount": "Save 5%"
+  },
+  {
+   "name": "HYALURONIC + CERAMIDE HYDRATING FACE SERUM",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "12% AHA + 2% HYALURONIC EXFOLIATING SLEEP MASK",
+   "originalPrice": "Rs: 995.00",
+   "discountPrice": "Rs: 895.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "DEEP PORE FACIAL FOAM CLEANSER",
+   "discountPrice": "Rs: 395.00"
+  },
+  {
+   "name": "2% Salicylic Face Serum With Tea Tree Oil & Zinc | Treats Acne, Blemishes & Acne Scars| Oily, Acne Prone Skin| Women and Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "Watermelon Super Glow Vitamin C Face Wash Gel| For Oil Control & Deep Cleansing | Combination & Oily Skin |100% Sulphate Free| Women and Men",
+   "discountPrice": "Rs: 395.00"
+  },
+  {
+   "name": "Watermelon Super Glow Matte Face Cream With Glycolic | Minimizes Pores & Evens Skin Tone| Combination & Oily skin| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.00",
+   "discount": "Save 5%"
+  },
+  {
+   "name": "5% AHA EXFOLIATING GLOW TONER",
+   "originalPrice": "Rs: 795.00",
+   "discountPrice": "Rs: 715.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "HYDRATING ROSE WATER TONER",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 626.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "Cica Calming Rapid ACNE Relief GEL Mask",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 535.02",
+   "discount": "Save 10%"
+  }
+ ]
+}

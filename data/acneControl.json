@@ -1,0 +1,63 @@
+{
+ "Products": [
+  {
+   "name": "CICA Niacinamide Night Gel With Green Tea, Tea Tree Oil & Hyaluronic| Reduces Acne & Dark Spots | Oily, Acne Prone & Sensitive Skin| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.01",
+   "discount": "Save 5%"
+  },
+  {
+   "name": "Cica & Green Tea Face Wash With Salicylic| Treats Acne & Acne Scars| Oily, Acne Prone Skin| 100% Sulphate Free| Women & Men",
+   "discountPrice": "Rs: 395.00"
+  },
+  {
+   "name": "10% Niacinamide Face Serum With Zinc & Antioxidants| Treats Acne, Dark Spots & Acne Scars| For Oily, Sensitive ,Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "CICA & Niacinamide Face Toner With Green Tea & Tea Tree Oil| Reduces Acne & Dark Spots| For Oil Control & Skin Irritation | Oily, Sensitive & Acne Prone Skin| 100% Alcohol Free| Women & Men",
+   "discountPrice": "Rs: 395.00"
+  },
+  {
+   "name": "Salicylic & French Green Clay Face Mask With Match Tea| Reduces Acne, Dark Spots & Blemishes| Oily & Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 660.04",
+   "discount": "Save 5%"
+  },
+  {
+   "name": "Cica Calming Rapid ACNE Relief GEL Mask",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 535.02",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "2% Salicylic Face Serum With Tea Tree Oil & Zinc | Treats Acne, Blemishes & Acne Scars| Oily, Acne Prone Skin| Women and Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "Cica Calming Acne Rescue Back & Body Spray| With Salicylic | Alcohol-Free",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 625.00",
+   "discount": "Save 10%"
+  },
+  {
+   "name": "5 Steps To Acne Free Skin",
+   "originalPrice": "Rs: 2,375.00",
+   "discountPrice": "Rs: 1,995.00",
+   "discount": "Save 16%"
+  },
+  {
+   "name": "Acne Fighting Trio",
+   "originalPrice": "Rs: 1,785.00",
+   "discountPrice": "Rs: 1,517.00",
+   "discount": "Save 15%"
+  },
+  {
+   "name": "INSTANT BUBBLE DETOX CLAY MASK"
+  }
+ ]
+}
