@@ -18,3 +18,7 @@
    * Abhishek : managing footer branch.
 
 # Team There is always room for improvement once respective branche's are done peoples can help each other. Thank you. 
+
+## Tools and Utilities
+   1. font 
+     * primary font : Roboto https://fonts.google.com/specimen/Roboto?query=roboto
