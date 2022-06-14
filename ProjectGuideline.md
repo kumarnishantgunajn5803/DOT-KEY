@@ -1,6 +1,6 @@
 # Project Name : Dot and key clone
   original : https://www.dotandkey.com/
-  daily scrum at 10 AM to brief each other on work progress its mandatory.
+  * **daily scrum at 10 AM to brief each other on work progress its mandatory**.
 ## Team Members:
    1. Vicky
    2. Sagar
