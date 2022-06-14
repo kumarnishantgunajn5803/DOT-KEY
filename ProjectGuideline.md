@@ -1,6 +1,6 @@
 # Project Name : Dot and key clone
   original : https://www.dotandkey.com/
-
+  daily scrum at 10 AM to brief each other on work progress its mandatory.
 ## Team Members:
    1. Vicky
    2. Sagar
@@ -17,4 +17,4 @@
    * Surjeet :  managing signUp-login branch.
    * Abhishek : managing footer branch.
 
-# Team There is always room for improvement once respective branche's are done peoples can help each other. Thake you. 
+# Team There is always room for improvement once respective branche's are done peoples can help each other. Thank you. 
