@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <style>
+        img {
+            display: block;
+            width: 100%;
+
+        }
+
+        input[type="submit"] {
+            /* width: 100%; */
+            background: #50504b;
+            padding: 15px 10px;
+            border: none;
+            color: #FFF;
+            font-size: 14px;
+            /* display: block; */
+            margin: auto;
+            margin-top: 30px;
+            border: none;
+
+            cursor: pointer;
+
+            font-size: 20px;
+
+        }
+
+        #login_container {
+
+            width: 28%;
+            box-shadow: 1px solid #999;
+            /* border: 1px solid; */
+            margin: auto;
+            /* margin-top: 150px; */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: #3c3c37;
+            font-size: 33px;
+        }
+
+        label {
+            color: #50504b;
+
+        }
+
+        .label {
+            margin-top: 30px;
+        }
+
+        #loginForm {
+            width: 98%;
+            margin: auto;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+
+            padding: 12px 1px;
+            border: none;
+            color: #FFF;
+            font-size: 14px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            border: none;
+            margin-bottom: 30px;
+
+            cursor: pointer;
+
+            font-size: 20px;
+
+        }
+
+        input[type="email"],
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 5px;
+            resize: vertical;
+            margin-top: 10px;
+            font-size: 18px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        img {
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        img:last-child {
+            margin-bottom: 30px;
+
+        }
+
+        div {
+            outline: none;
+            display: block;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: roboto;
+            font-family: Ubuntu, sans-serif;
+            letter-spacing: .05em;
+            line-height: 1;
+            /* font-size: 18px; */
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+            text-rendering: optimizeSpeed;
+            /* font-weight: 400; */
+
+        }
+        a{
+            color: #444240;
+            text-align: right;
+        }
+        p{
+            color: #444240;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login_container">
+
+        <h1>Login</h1>
+        <div id="logo">
+            <img id="fblogin" src="https://scontent.fbho3-2.fna.fbcdn.net/v/t1.15752-9/287225470_533769011811533_3915399122427470749_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=E7PDaZ6pSrMAX-WVy9d&_nc_ht=scontent.fbho3-2.fna&oh=03_AVKPUOzsBpuVsRdxWwJCp3OK11_C1GEUYsuapL2rPeBo8A&oe=62D02471" alt="">
+            <img id="googlelogin" src="https://scontent.fbho3-2.fna.fbcdn.net/v/t1.15752-9/285543616_427065112362853_4890415742519111200_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=fW86AnegLPEAX-34JsY&_nc_ht=scontent.fbho3-2.fna&oh=03_AVI083DK5mAndErNl3dySQmipGo1eLJnDSvJDSXF7fgzVw&oe=62CF920F" alt="">
+        </div>
+        <form id="loginForm">
+            <label for="">EMAIL</label><br />
+            <input id="EMAIL" type="email" /><br />
+           
+            <div id="password">
+                <label for="">PASSWORD</label><br />
+                <a href="#">Forgot ?</a>
+
+            </div>
+            
+            <input id="PASSWORD" type="password" /><br />
+            <input type="submit" name="submit" id="submit" value="Sign In">
+        </form>
+
+        <div>
+           
+            <p>Don't have an account? <a href="singnup.html">Sign up here</a></p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    let form = document.querySelector("#loginForm");
+    let userData = JSON.parse(localStorage.getItem("userData")) || [];
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let data = {
+            
+            email: form.EMAIL.value,
+           
+            password: form.PASSWORD.value
+        };
+        if(checkLogin(data.email,data.password)===true){
+            // userData.push(data);
+            localStorage.setItem("login",JSON.stringify(data));
+            alert("Login Successful");
+            // window.location.href="index.html"
+
+        }else{
+            alert("Wrong Username or Password");
+        }
+
+
+    });
+    function checkLogin(email, password) {
+        let filtered = userData.filter(function (el) {
+            return email === el.email && password === el.password;
+
+        });
+        if (filtered.length > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    document.querySelector("#fblogin").addEventListener("click", function () {
+        window.location.href = "https://www.facebook.com/dialog/oauth?scope=email&state=13453-6c73bf1a542441f48b49bc22aff73872&redirect_uri=https%3A%2F%2Foneclicksociallogin.devcloudsoftware.com%2Fuser%2Ffacebookloginnotifier%2F&client_id=1667514393504118"
+
+    })
+    document.querySelector("#googlelogin").addEventListener("click", function () {
+        window.location.href = "https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?state=13453-a0f7088ec5214bf7bf3249f699245f1c&redirect_uri=https%3A%2F%2Foneclicksociallogin.devcloudsoftware.com%2Fuser%2Fgoogleloginnotifier%2F&client_id=1003899641045-oa1oblo54ae2lh2qb2in254k1dgghs1g.apps.googleusercontent.com&response_type=code&include_granted_scopes=true&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&prompt=select_account&access_type=online&flowName=GeneralOAuthFlow"
+
+    })
+</script>
