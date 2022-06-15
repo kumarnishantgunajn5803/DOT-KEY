@@ -10,8 +10,12 @@
         img {
             display: block;
             width: 100%;
-
+            cursor: pointer;
         }
+        /* img:hover{
+            background-color: #909082;
+            color: #909082;
+        } */
 
         input[type="submit"] {
             /* width: 100%; */
@@ -129,11 +133,16 @@
         a{
             color: #444240;
             text-align: right;
+            text-decoration: none;
         }
         p{
             color: #444240;
             text-align: center;
             margin-bottom: 70px;
+        }
+        #password{
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -152,7 +161,7 @@
            
             <div id="password">
                 <label for="">PASSWORD</label><br />
-                <a href="#">Forgot ?</a>
+                <a href="singnup.html">Forgot ?</a>
 
             </div>
             
@@ -162,7 +171,7 @@
 
         <div>
            
-            <p>Don't have an account? <a href="singnup.html">Sign up here</a></p>
+            <p> <a href="singnup.html">Don't have an account? Sign up here</a></p>
         </div>
 
     </div>
