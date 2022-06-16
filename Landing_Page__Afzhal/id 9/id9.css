@@ -1,0 +1,77 @@
+#dum_div_id9{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+#p1_id9,#p2_id9{
+    margin: 1px;
+    text-transform: uppercase;
+}
+#p1_id9{
+   font-size: 20px;
+   font-family:Roboto-Light ;
+   font-weight: 400;
+}
+#p2_id9{
+    font-size: 30px;
+    font-style: italic;
+    font-family:Roboto-Light ;
+    font-weight:900;
+    margin-bottom: 15px;
+ }
+#container_id9{
+    width: 90%;
+    /* border: 1px dashed black; */
+    margin: auto;
+}
+#flex1_id9,#flex2_id9{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+#flex2_id9{
+    margin-bottom: 0px;
+}
+#f1_b1_id9{
+    width: 440px;
+    height: 440px;
+    margin-right: 12px;
+}
+#f1_b2_id9{
+    width: 735px;
+    height: 440px;
+}
+#f2_b2_id9{
+    width: 440px;
+    height: 440px;
+}
+#f2_b1_id9{
+    width: 735px;
+    height: 440px;
+    margin-right: 12px;
+}
+.img_id9{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+@font-face {
+    font-family:Gilroy-Light ;
+    src: url(Gilroy-Light-300.ttf);
+}
+@font-face {
+    font-family:Ubuntu-Medium ;
+    src: url(Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family:Roboto-Regular ;
+    src: url(Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:Roboto-Light ;
+    src: url(Roboto-Light.ttf);
+}
