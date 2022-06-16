@@ -1,0 +1,40 @@
+#p_id13,#h1_id13 {
+    font-family: roboto_light;
+}
+#one_id13{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#img_id13{
+    border-radius: 10px;
+    width:100%
+}
+#p_id13{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px;
+    padding-top: 10px;
+
+}
+#h1_id13{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+ @font-face {
+    font-family:roboto_light;
+    src: url(Roboto-Light.ttf);
+}
+  
+body {
+    font-family: roboto_light;
+    /* color: darkgreen; */
+} 
