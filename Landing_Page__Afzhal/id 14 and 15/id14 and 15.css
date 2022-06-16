@@ -1,5 +1,5 @@
 #container_id14{
-    width: 80%;
+    width: 75%;
     height: 294px;
     margin: auto;
     /* margin-top: 150px; */
@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 123px;
+    /* padding: 123px; */
     padding-top: 0px;
     padding-bottom: 0px;
     box-sizing: border-box;
@@ -16,20 +16,22 @@
     text-align: center;
     padding-top: 10px;
     line-height: 30px;
+    color: rgb(66, 66, 66);
 }
 #part2_id14{
-    margin-top: 18px;
+    margin-top: 20px;
+    width: 95%;
 }
 .sp1_id14{
     text-align: center;
     font-family:ubuntu_light;
     /* font-weight: 00; */
-    font-size: 20px;
+    font-size: 22px;
 }
 .sp2_id14{
     text-align: center;
     font-family:ubuntu_light;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
     font-style: italic;
 }
@@ -38,14 +40,14 @@
     margin-bottom: 1px;
     font-style: italic;
     font-family:roboto_light;
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 900;
+    font-size: 32px;
 }
 #p1_id14{
     margin: 0px;
     font-family:roboto_light;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 .p2_id14{
@@ -63,4 +65,28 @@
 @font-face {
     font-family:ubuntu_light;
     src: url(Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family:roboto_medium;
+    src: url(Roboto-Medium.ttf);
+}
+
+/* id15 css: */
+#flex_id15{
+    width: 100%;
+    height: 150px;
+    /* border: 1px dashed black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.img_container_id15{
+    width: 150px;
+    height: 150px;
+    padding: 0px 46px  0px 46px ;
+}
+.img_id15{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
