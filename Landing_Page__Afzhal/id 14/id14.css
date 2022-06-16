@@ -1,0 +1,66 @@
+#container_id14{
+    width: 80%;
+    height: 294px;
+    margin: auto;
+    /* margin-top: 150px; */
+    /* border: 1px dashed black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 123px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+.sub_container_id14{
+    text-align: center;
+    padding-top: 10px;
+    line-height: 30px;
+}
+#part2_id14{
+    margin-top: 18px;
+}
+.sp1_id14{
+    text-align: center;
+    font-family:ubuntu_light;
+    /* font-weight: 00; */
+    font-size: 20px;
+}
+.sp2_id14{
+    text-align: center;
+    font-family:ubuntu_light;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
+#h1_id14{
+    margin: 0px;
+    margin-bottom: 1px;
+    font-style: italic;
+    font-family:roboto_light;
+    font-weight: 700;
+    font-size: 28px;
+}
+#p1_id14{
+    margin: 0px;
+    font-family:roboto_light;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.p2_id14{
+    margin: 0px;
+    font-family:ubuntu_light;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+@font-face {
+    font-family:roboto_light;
+    src: url(Roboto-Light.ttf);
+}
+@font-face {
+    font-family:ubuntu_light;
+    src: url(Ubuntu-Regular.ttf);
+}

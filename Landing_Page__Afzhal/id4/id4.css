@@ -32,14 +32,9 @@
     font-family: roboto_light;
 }
 @font-face {
-    font-family:roboto_light;
+    font-family: roboto_light;
     src: url(Roboto-Light.ttf);
 }
-  
-body {
-    font-family: roboto_light;
-    /* color: darkgreen; */
-} 
 
 
  /* Not made responsive 
