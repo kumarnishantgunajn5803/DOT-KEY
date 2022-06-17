@@ -1,0 +1,141 @@
+/* Take a look at the body tag if trouble */
+body {
+    margin: 0px;
+}
+
+#crouser_id5 {
+    /* border: 1px solid transparent; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+#crouser_img_id5 {
+    width: 100%;
+    border-radius: 30px;
+}
+
+#crouser_id5>#btn1_id5,#crouser_id5>#btn2_id5 {
+    position: absolute;
+    top: 50%;
+    border-radius: 100%;
+    font-size: 25px;
+    border: 1px solid transparent;
+    width: 10px;
+}
+
+#btn1_id5 {
+    left: 0px;
+    background: 0 0;
+    color: #3c3c3c;
+    width: 10px;
+    height: 10px !important;
+}
+
+#btn2_id5 {
+    right: 10px;
+    background: 0 0;
+    color: #3c3c3c;
+    width: 10px;
+    height: 10px !important;
+}
+
+.round_btn_id5{
+    width: 0px;
+    height: 13px;
+    /* font-size: 2px; */
+    border: 1px solid gray;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    border-radius: 100%;
+}
+#round1_id5{
+    left:48%;
+}
+#round2_id5{
+    left:49.5%;
+}
+#round3_id5{
+    left:51%;
+}
+#round4_id5{
+    left:52.5%;
+}
+#round5_id5{
+    left:54%;
+}
+
+#h_id6{
+    width: 30%;
+    margin: auto;
+    margin-top: 90px;
+    /* border: 1px dashed black; */
+    color: #3c3c3c;
+}
+#s1_id6{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+    font-family:Roboto-Light ;
+    margin-bottom: 5px;
+}
+.s2_id6{
+text-align: center;
+font-size: 36px;
+font-weight: 500;
+margin: 0px;
+padding: 0px;
+font-family:Roboto-Regular ;
+margin-bottom: 50px;
+}
+#sp2_id6{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family:Roboto-Light ;
+    src: url(Roboto-Light.ttf);
+}
+@font-face {
+    font-family:Roboto-Regular ;
+    src: url(Roboto-Regular.ttf);
+}
+
+#carouser_id6 {
+    /* border: 1px solid transparent; */
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+#cr_img6 {
+    width: 100%;
+    border-radius: 10px;
+}
+.round_btn_id6{
+    width: 0px;
+    height: 13px;
+    /* font-size: 2px; */
+    border: 1px solid gray;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    border-radius: 100%;
+}
+#round1_id6{
+    left:48%;
+}
+#round2_id6{
+    left:50%;
+}
+#round3_id6{
+    left:52%;
+}
