@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div id = "overall-cart">
+        <div id = "head">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Dot_Key_Logo.png">
+            <a href="#">Cart</a>
+            <span>></span>
+            <a href="#">Information</a>
+            <span>></span>
+            <a href="#">Shipping</a>
+            <span>></span>
+            <a href="#">Payment</a>
+        </div>
+        <div id="shipping-info">
+            <div>
+                <!-- bottom border -->
+                <div>
+                    <p>Contact</p>
+                    <!-- email -->
+                    <p>workmailvicky101@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Shipping method</h3>
+                    <div>
+                        <!-- add radiobutton like image -->
+                        <p><span></span> Standard(3-5 Business Days)</p>
+                        <p>Free</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">< Return to information</a>
+                    <button id="shipping-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id = 'cart'>
+        <h2>Pay now and get <span>3% instant discount</span></h2>
+        <hr>
+        <div>
+            <table>
+                <tbody>
+                    <!-- append tr with image , name, price -->
+                </tbody>
+            </table>
+        </div>
+        <div>
+           <input type="text" id="discout-code" placeholder="Gift cart or discount code">
+           <button>Apply</button>
+        </div>
+        <hr>
+        <div id="sub-total">
+            <div>
+                <p>Subtotal</p>
+                <p>₹<span>1</span></p>
+            </div>
+            <div>
+                <p>Shipping</p>
+                <p>calculated at next step</p>
+            </div>
+        </div>
+        <div id="total">
+            <div>
+                <p>Total</p>
+                <p>Including ₹333.99 in taxes</p>
+            </div>
+            <p>INR<span>₹</span></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector('#shipping-btn').addEventListener('click',handlePayment);
+
+
+    function handlePayment(){
+        window.location.replace("./payment.html")
+    }
+</script>
