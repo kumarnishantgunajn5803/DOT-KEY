@@ -25,7 +25,7 @@ function displayData(data) {
     let qty = document.createElement("td");
 
     // Updated Cart price
-    cartTotal += element.totalPrice;
+    cartTotal += element.discountPrice;
 
     let total = document.createElement("td");
     total.innerText = element.discountPrice;
@@ -55,5 +55,6 @@ function shipping(event) {
     mbl: document.querySelector("#mbl").value,
   };
   loginDetails.push(obj);
+  localStorage.setItem("shipping-info", JSON.stringify(loginDetails));
   window.location.replace("./shipping.html");
 }
