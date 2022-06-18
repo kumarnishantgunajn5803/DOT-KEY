@@ -23,9 +23,14 @@
             <h3>Contact Information</h3>
             <p>Already have an account? Log In to redeem Skindulgence Points.<span>Log in</span></p>
             <form>
-                <input type="email">
-                <input type="checkbox" id="news-letter">
+                <input type="email" placeholder="Enter Email">
+                <!-- Edited by Abhishek -->
+                <div class="checkbox">
+                    <input  type="checkbox" id="news-letter">
                 <label for="news-letter">Keep me up to date on news and exclusive offers</label>
+
+                </div>
+                
                 <h2>Shipping address</h2>
                 <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
                 <select id="country" name="country" class="form-control">
@@ -84,10 +89,16 @@
                         <option value="Pondicherry">Pondicherry</option>
                       </select>
                     <input type="tel" placeholder="Phone">
-                    <input type="checkbox" id="saveInfo">
+                    <!-- Edited by Abhishek -->
+                    <div class="checkbox">
+                        <input type="checkbox" id="saveInfo">
                     <label for="saveInfo">Save this information for next time</label>
-                    <input type="checkbox" id="getOrderUpdate">
+                    </div>
+                    <div class="checkbox">
+                         <input type="checkbox" id="getOrderUpdate">
                     <label for="getOrderUpdate">Get Order Updates On WhattsApp</label>
+                    </div>
+                   
                     <button type="submit">Continue to shipping</button>
                 </div>
             </form>
