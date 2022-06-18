@@ -6,6 +6,7 @@ let Products = [
     discountPrice: 670.05,
     qty: 1,
     id: 1,
+    totalPrice: 0,
   },
   {
     image:
@@ -14,6 +15,7 @@ let Products = [
     discountPrice: 598.0,
     qty: 1,
     id: 2,
+    totalPrice: 0,
   },
   {
     image:
@@ -22,6 +24,7 @@ let Products = [
     discountPrice: 565.01,
     qty: 1,
     id: 3,
+    totalPrice: 0,
   },
   {
     image:
@@ -30,6 +33,7 @@ let Products = [
     discountPrice: 565.0,
     qty: 1,
     id: 4,
+    totalPrice: 0,
   },
 ];
 //  setting dummy localstore value
@@ -107,8 +111,8 @@ function displayData(prod) {
 // }
 function handleQtyChange(e, elem) {
   // console.log(e.target.value);
-  let updatedPrice = elem.discountPrice * e.target.value;
-  console.log(updatedPrice);
+  let updatedPrice = elem.totalPrice * e.target.value;
+  // console.log(updatedPrice);
 
   // update localStorag
   // elem.discountPrice = updatedPrice;
@@ -133,12 +137,15 @@ function handleProdRemove(e, element) {
   // remove product from existing arr
   let arr = prod.filter((elem) => elem != element);
   localStorage.setItem("cart-products", JSON.stringify(arr));
-  console.log(JSON.parse(localStorage.getItem("cart-products")).length);
+  let data = JSON.parse(localStorage.getItem("cart-products"));
+  displayData(data);
 }
 
-function handleInformation() {
+function handleInformation(event) {
   event.preventDefault();
   window.location.replace("./information.html");
 }
 
-function updateTotalCartVal(prod) {}
+// function updateTotalCartVal(prod) {
+
+// }
