@@ -9,16 +9,90 @@
 
     <!-- styling -->
     <link rel="stylesheet" href="./ENDGAME_landing_page_styling.css">
-    <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="../common/navbar.css">
+    <link rel="stylesheet" href="../common/footer.css">
 
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="navbar-container">
+        <div id="topbar">UPTO 20% OFF SITEWIDE</div>
+        <div id="navbar">
+            <div id="menu" onclick="afterclick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
+            <div class="popup">
+                <div id="flex">
+                    <ul class="nav" id="nav">
+                        <li><a href="#">WHAT'S NEW?</a></li>
+                        <li><a href="#">PARTY TOP PICKS</a></li>
+                        <li><a href="#">BEST SELLER</a></li>
+                        <li><a href="#">SHOP BY INGRIDIENT</a></li>
+                        <li><a href="#">SHOP BY CONCERN</a></li>
+                        <li><a href="#">SHOP ALL PRODUCT</a></li>
+                        <li><a href="#">HAIR CARE</a></li>
+                        <li><a href="#">BODY CARE</a></li>
+                        <li><a href="#">IKWI NUTRITION</a></li>
+                        <li><a href="#">KNOW US BETTER</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="useritem">
+                <!-- search -->
+                <div class="searchBox">
+                    <input type="text" class="searchText" placeholder="Search">
+                    <a href="#" class="searchBtn">
+                        <i class="fas fa-search fa-1x"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="userinfo">
+
+                <!-- SHIPMENT -->
+                <div id="shipment" class="user">
+                    <a href="https://www.masaischool.com/">
+                        <i class="fa-solid fa-location-pin fa-2x"></i>
+                    </a>
+                </div>
+
+                <!-- CART -->
+                <div id="cart" class="user">
+                    <a href="https://www.masaischool.com/">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </a>
+                </div>
+
+                <!-- LOGIN USER -->
+                <div id="login" class="user">
+                    <a href="https://www.masaischool.com/">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
+                alt="">
+        </div>
+    </div>
     <!-- id3 by afzhal -->
     <div id="div_img_id3">
         <img id="img_id3" src="./Group_423_d41a2573-1e24-4d91-93de-639f8a62bfc0.jpg">
@@ -176,7 +250,7 @@
         </div>
     </div>
     <div class="dum_div_id9 custom2">
-        <p class="p1_id9">  GUIDE TO</p>
+        <p class="p1_id9"> GUIDE TO</p>
         <p class="p2_id9">SKIN CARE</p>
     </div>
     <div class="container-custom-2">
@@ -207,7 +281,9 @@
     <p id="p_id13">LOVE IS GREATER </p>
     <h1 id="h1_id13">WHEN SHARED</h1>
     <div id="one_id13">
-        <img id="img_id13" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1_f077b04b-7e98-4c38-94e3-16da38fc85ab.jpg?v=1651149023" alt="img1"> 
+        <img id="img_id13"
+            src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1_f077b04b-7e98-4c38-94e3-16da38fc85ab.jpg?v=1651149023"
+            alt="img1">
     </div>
 
     <!-------------------------------------------------------------------------------------------------------------------------->
@@ -215,12 +291,12 @@
     <div id="container_id14">
         <h1 id="h1_id14">CLEAN BEAUTY</h1>
         <p id="p1_id14">WITH UNCOMPROMISED EFFICACY</p>
-        <div class="sub_container_id14"><span class="sp1_id14">At Dot & Key, we strive to find the missing </span> 
+        <div class="sub_container_id14"><span class="sp1_id14">At Dot & Key, we strive to find the missing </span>
             <span class="sp2_id14">"dots"</span>
             <span class="sp1_id14">in your skincare regime and are obsessed
-                with providing solutions or </span> 
-                <span class="sp2_id14">"keys" </span>
-                <span class="sp1_id14"> to these.</span>
+                with providing solutions or </span>
+            <span class="sp2_id14">"keys" </span>
+            <span class="sp1_id14"> to these.</span>
         </div>
 
         <div class="sub_container_id14" id="part2_id14">
@@ -229,43 +305,55 @@
             <span class="sp2_id14">luxurious botanicals</span>
             <span class="sp1_id14">with</span>
             <span class="sp2_id14">high performance actives</span>
-            <span class="sp1_id14">, we bring to you clean formulations that are absolutely safe, delightfully gentle and
+            <span class="sp1_id14">, we bring to you clean formulations that are absolutely safe, delightfully gentle
+                and
                 unquestionably effective.</span>
         </div>
         <div id="flex_id15">
             <div class="img_container_id15">
-                <img class="img_id15" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-ICONS.png?v=1645770027">
+                <img class="img_id15"
+                    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-ICONS.png?v=1645770027">
             </div>
             <div class="img_container_id15">
-                <img  class="img_id15" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-ICONS_b6233563-9f3e-43f6-b158-5205886e2120.png?v=1645779546">
+                <img class="img_id15"
+                    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-ICONS_b6233563-9f3e-43f6-b158-5205886e2120.png?v=1645779546">
             </div>
             <div class="img_container_id15">
-                <img  class="img_id15" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-ICONS.png?v=1645770027">
+                <img class="img_id15"
+                    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-ICONS.png?v=1645770027">
             </div>
             <div class="img_container_id15">
-                <img  class="img_id15" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-ICONS.png?v=1645770027">
+                <img class="img_id15"
+                    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-ICONS.png?v=1645770027">
             </div>
         </div>
     </div>
 
-     <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
     <!-- id17 -->
 
     <h1 id="h1_id17">AS SEEN IN</h1>
     <div id="flex_id17">
         <div class="card_id17">
             <p class="p_id17">"Latest and greatest natural products for safe, non-toxic skincare."</p>
-            <div class="div_img_id17"><img src=https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-3_9501c881-18bc-4482-a41a-bae5979fd0b9_180x.png?v=1596894078" alt="brand1"></div>
+            <div class="div_img_id17"><img
+                    src=https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-3_9501c881-18bc-4482-a41a-bae5979fd0b9_180x.png?v=1596894078"
+                    alt="brand1"></div>
         </div>
 
         <div class="card_id17">
-            <p class="p_id17" id="extra_forimg_id17">"Dot & Key are hoping to spotlight all the body parts you forget to look after."</p>
-            <div class="div_img_id17"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Vogue-3-min_180x.png?v=1600165794" alt="brand2"></div>
+            <p class="p_id17" id="extra_forimg_id17">"Dot & Key are hoping to spotlight all the body parts you forget to
+                look after."</p>
+            <div class="div_img_id17"><img
+                    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Vogue-3-min_180x.png?v=1600165794"
+                    alt="brand2"></div>
         </div>
 
         <div class="card_id17">
             <p class="p_id17">"Even a 10 step routine can have blind spots. Dot & Key fills in those gaps."</p>
-            <div class="div_img_id17"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-2_8a4b49eb-9d7c-4864-954a-fe48fb05a208_180x.png?v=1596894127" alt="brand3"></div>
+            <div class="div_img_id17"><img
+                    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-2_8a4b49eb-9d7c-4864-954a-fe48fb05a208_180x.png?v=1596894127"
+                    alt="brand3"></div>
         </div>
     </div>
     </div>
@@ -277,13 +365,17 @@
     </div>
     <div id="flex_id19">
         <div id="inside_flex1_id19">
-            <img id="img_id19" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_64_1_7f2ff662-3a45-45a1-9f0c-952252786d05.png?v=1634885869" alt="img1">
+            <img id="img_id19"
+                src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_64_1_7f2ff662-3a45-45a1-9f0c-952252786d05.png?v=1634885869"
+                alt="img1">
         </div>
         <div id="inside_flex2_id19">
-            <div id="change_para_id19">Probiotics for Your Skin: The Benefits of Adding Them to Your Skincare Routine</div>
+            <div id="change_para_id19">Probiotics for Your Skin: The Benefits of Adding Them to Your Skincare Routine
+            </div>
             <button id="btn_id19">READ MORE</button>
-            <button id="btn1_id19"><</button>
-            <button id="btn2_id19">></button>
+            <button id="btn1_id19">
+                <</button>
+                    <button id="btn2_id19">></button>
         </div>
     </div>
     <!-------------------------------------------------------------------------------------------------------------------------->
@@ -403,3 +495,4 @@
 
 </html>
 <script src="./ENDGAME_landing_page_script.js"></script>
+<script src="../common/navbar.js"></script>

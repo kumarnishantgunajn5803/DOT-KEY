@@ -76,6 +76,10 @@
     margin-left: 12px;
 }
 
+#box3 > * {
+    padding: 7px;
+}
+
 #footer input {
     border: transparent;
     font-size: 16px;

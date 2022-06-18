@@ -3,8 +3,8 @@ document.querySelector("#img_id3").addEventListener("click", redirect_no1_id3);
 
 // Tricky one
 function redirect_no1_id3() {
-    // document.querySelector("#img_id3").innerHTML='';
-    location.href = "./dummy_link_page_demo.html";
+    location.href = "../products-page/bodycare.html";
+    location.href = "../products-page/haircare.html";
 }
 /* ----------------------------------------------------------------------------------------- */
 
@@ -13,31 +13,31 @@ function redirect_no1_id3() {
 document.querySelector("#one_id4").addEventListener("click", redirect_no1_id4);
 
 function redirect_no1_id4() {
-    location.href = "./dummy_link_page_demo.html";
+    location.href = "../products-page/bodycare.html";
 }
 // For second card
 document.querySelector("#two_id4").addEventListener("click", redirect_no2_id4);
 
 function redirect_no2_id4() {
-    location.href = "./dummy_link_page_demo.html";
+    location.href = "../products-page/haircare.html";
 }
 // For third card
 document.querySelector("#three_id4").addEventListener("click", redirect_no3_id4);
 
 function redirect_no3_id4() {
-    location.href = "./dummy_link_page_demo.html";
+    location.href = "../products-page/bodycare.html";
 }
 // For fourth card
 document.querySelector("#four_id4").addEventListener("click", redirect_no4_id4);
 
 function redirect_no4_id4() {
-    location.href = "./dummy_link_page_demo.html";
+    location.href = "../products-page/haircare.html";
 }
 // For fifth card
 document.querySelector("#five_id4").addEventListener("click", redirect_no5_id4);
 
 function redirect_no5_id4() {
-    location.href = "./dummy_link_page_demo.html";
+    location.href = "../products-page/bodycare.html";
 }
 /* ----------------------------------------------------------------------------------------- */
 // id 5 and 6
