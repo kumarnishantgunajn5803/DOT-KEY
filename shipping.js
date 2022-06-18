@@ -10,10 +10,10 @@ window.onload = displayData(data, shippingAddr);
 
 function displayData(data) {
   // setting email id
-  document.querySelector("#email").innerText = shippingAddr[0].email;
+  document.querySelector("#email").innerText = shippingAddr.email;
   //   setting addr
-  document.querySelector("#shipping-addr").innerText =
-    shippingAddr[0].addr + " " + shippingAddr[0].addrOptional;
+  document.querySelector("#address").innerText =
+    shippingAddr.addr + " " + shippingAddr.addrOptional;
   let cartTotal = 0;
   // console.log(data);
   data.forEach((element) => {
