@@ -119,8 +119,8 @@ function handleInformation() {
 }
 
 // checkout button
-// document
-//   .querySelector("#continue-checkout")
-//   .addEventListener("click", function () {
-//     handleInformation();
-//   });
+document
+  .querySelector("#continue-checkout")
+  .addEventListener("click", function () {
+    handleInformation();
+  });
