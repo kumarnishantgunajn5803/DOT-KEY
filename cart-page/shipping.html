@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping</title>
+    <link rel="stylesheet" href="shipping.css">
+</head>
+
+<body id="body">
+    <div id="overall-cart">
+        <div id="head">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Dot_Key_Logo.png">
+            <a href="#">Cart</a>
+            <span>></span>
+            <a href="#">Information</a>
+            <span>></span>
+            <a href="#">Shipping</a>
+            <span>></span>
+            <a href="#">Payment</a>
+        </div>
+        <div id="shipping-info">
+            <div>
+                <!-- bottom border -->
+                <div id="contactBox">
+                    <div class="cbox1">
+                        <p>Contact</p>
+                        <!-- email -->
+                        <p id="email"></p>
+                    </div>
+                    <hr>
+                    <!-- Edited by Abhishek -->
+                    <div class="cbox1">
+                        <p>Ship to</p>
+                        <!-- Address -->
+                        <p id="address"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Shipping method</h3>
+                    <div id="shipping-method">
+                        <div class="shipbox">
+                            <!-- add radiobutton like image -->
+                            <div id="ship">
+                                <!-- <p></p>
+                                <input type="radiobutton" -->
+                                <input type="radio" name="DeliveryOption" id="standard" checked>
+                                <label for="standard">Free Shipping (Cash on Delivery)
+                                    <br>
+                                    This shipping option is eligible for Cash on Delivery</labl>
+                            </div>
+                            <div class="free">
+                                <h2>Free</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="shipbox">
+                            <div>
+                                <input type="radio" name="DeliveryOption" id="fee" >
+                                <label for="free">Standard(3-5 Business Days)</labl>
+                            </div>
+                            <div class="free">
+                                <h2>Free</h2>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="btn">
+                    <a href="#">
+                        < Return to information</a>
+                            <button id="shipping-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id='cart'>
+        <h2>Pay now and get <span>3% instant discount</span></h2>
+        <hr>
+        <div>
+            <table>
+                <tbody>
+                    <!-- append tr with image , name, price -->
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <input type="text" id="discout-code" placeholder="Gift cart or discount code">
+            <button>Apply</button>
+        </div>
+        <hr>
+        <div id="sub-total">
+            <div>
+                <p>Subtotal</p>
+                <!-- subtotal -->
+                <p>₹<span id="cart-total"></span></p>
+            </div>
+            <div>
+                <p>Shipping</p>
+                <!-- shipping type -->
+                <p>Free</p>
+            </div>
+        </div>
+        <hr>
+        <div id="total">
+            <div>
+                <p>Total</p>
+                <!-- after coupan discout -->
+                <p>₹<span id="total-after-discount"></span></p>
+            </div>
+            <p>Including ₹90.92 in taxes</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./shipping.js"></script>
+<!-- <script>
+    document.querySelector('#shipping-btn').addEventListener('click', handlePayment);
+
+
+    function handlePayment() {
+        window.location.replace("./payment.html")
+    }
+</script> -->
