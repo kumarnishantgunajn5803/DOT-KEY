@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="cart.css">
-    <script src="cart.js"></script>
+    <!-- <script src="cart.js"></script> -->
 </head>
 <body>
     <div id="main">
@@ -44,140 +44,140 @@
 </html>
 
 <script>
-//     let Products = [
-//   {
-//     image:
-//       "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
-//     name: "72 HR Hydrating Probiotic Gel Moisturizer For Face With Hyaluronic & Rice Water| For Healthy,Soft Skin| Combination, Dry Skin| Women & Men",
-//     originalPrice: "Rs: 745.00",
-//     discountPrice: 670.05,
-//     discount: "Save 10%",
-//     id:1
-//   },
-//   {
-//     image:
-//       "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
-//     name: "10% Niacinamide Face Serum With Zinc & Antioxidants| Treats Acne, Dark Spots & Acne Scars| For Oily, Sensitive ,Acne Prone Skin| Women & Men",
-//     originalPrice: "Rs: 665.00",
-//     discountPrice: 598.0,
-//     id:2
-//   },
-//   {
-//     image:
-//       "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
-//     name: "CICA Niacinamide Night Gel With Green Tea, Tea Tree Oil & Hyaluronic| Reduces Acne & Dark Spots | Oily, Acne Prone & Sensitive Skin| Women & Men",
-//     originalPrice: "Rs: 595.00",
-//     discountPrice: 565.01,
-//     discount: "Save 5%",
-//     id:3
-//   },
-//   {
-//     image:
-//       "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
-//     name: "10% AHA + 2% BHA EXFOLIATING GLOW HYDRO PEEL",
-//     originalPrice: "Rs: 595.00",
-//     discountPrice: 565.0,
-//     discount: "Save 5%",
-//     id:4
-//   },
-// ];
-// //  setting dummy localstore value
-// localStorage.setItem("cart-products", JSON.stringify(Products));
+    let Products = [
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
+    name: "72 HR Hydrating Probiotic Gel Moisturizer For Face With Hyaluronic & Rice Water| For Healthy,Soft Skin| Combination, Dry Skin| Women & Men",
+    originalPrice: "Rs: 745.00",
+    discountPrice: 670.05,
+    discount: "Save 10%",
+    id:1
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
+    name: "10% Niacinamide Face Serum With Zinc & Antioxidants| Treats Acne, Dark Spots & Acne Scars| For Oily, Sensitive ,Acne Prone Skin| Women & Men",
+    originalPrice: "Rs: 665.00",
+    discountPrice: 598.0,
+    id:2
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
+    name: "CICA Niacinamide Night Gel With Green Tea, Tea Tree Oil & Hyaluronic| Reduces Acne & Dark Spots | Oily, Acne Prone & Sensitive Skin| Women & Men",
+    originalPrice: "Rs: 595.00",
+    discountPrice: 565.01,
+    discount: "Save 5%",
+    id:3
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_18_1_180x.png?v=1653385577",
+    name: "10% AHA + 2% BHA EXFOLIATING GLOW HYDRO PEEL",
+    originalPrice: "Rs: 595.00",
+    discountPrice: 565.0,
+    discount: "Save 5%",
+    id:4
+  },
+];
+//  setting dummy localstore value
+localStorage.setItem("cart-products", JSON.stringify(Products));
 
-// // getting localStorage value by key
-// let prod = JSON.parse(localStorage.getItem("cart-products")) || [];
+// getting localStorage value by key
+let prod = JSON.parse(localStorage.getItem("cart-products")) || [];
 
-// displayCart(Products)
+displayCart(Products)
 
-// // iterating pro and appending to table
-// function displayCart(prod){
-//     document.querySelector("tbody").innerText="";
-//     prod.forEach((element) => {
-//     let imageTd = document.createElement("td");
-//     let image = document.createElement("img");
-//     image.setAttribute("src", element.image);
-//     imageTd.append(image);
+// iterating pro and appending to table
+function displayCart(prod){
+    document.querySelector("tbody").innerText="";
+    prod.forEach((element) => {
+    let imageTd = document.createElement("td");
+    let image = document.createElement("img");
+    image.setAttribute("src", element.image);
+    imageTd.append(image);
 
-//     let nameTd = document.createElement("td");
-//     let name = document.createElement("p");
-//     name.innerText = element.name;
-//     let btn = document.createElement("button");
+    let nameTd = document.createElement("td");
+    let name = document.createElement("p");
+    name.innerText = element.name;
+    let btn = document.createElement("button");
 
-//     // Remove button
-//     btn.innerText = "Remove";
-//     btn.setAttribute("id", "remove-btn");
-//     // btn.style.color='white';
-//     btn.addEventListener("click", function () {
-//         event.target.parentNode.parentNode.remove();
-//         handleProdRemove(event, element);
-//     });
-//     nameTd.append(name, btn);
+    // Remove button
+    btn.innerText = "Remove";
+    btn.setAttribute("id", "remove-btn");
+    // btn.style.color='white';
+    btn.addEventListener("click", function () {
+        event.target.parentNode.parentNode.remove();
+        handleProdRemove(event, element);
+    });
+    nameTd.append(name, btn);
 
-//     let qty = document.createElement("td");
-//     let qtyNum = document.createElement("input");
-//     qtyNum.setAttribute("id", "change-qty");
-//     qtyNum.setAttribute("type", "number");
-//     qtyNum.setAttribute("value", "1");
-//     qtyNum.setAttribute("min", "1");
-//     qtyNum.addEventListener("change", function () {
-//         handleQtyChange(event, element);
-//     });
-//     qty.append(qtyNum);
+    let qty = document.createElement("td");
+    let qtyNum = document.createElement("input");
+    qtyNum.setAttribute("id", "change-qty");
+    qtyNum.setAttribute("type", "number");
+    qtyNum.setAttribute("value", "1");
+    qtyNum.setAttribute("min", "1");
+    qtyNum.addEventListener("change", function () {
+        handleQtyChange(event, element);
+    });
+    qty.append(qtyNum);
 
-//     let total = document.createElement("td");
-//     total.innerText = element.discountPrice;
+    let total = document.createElement("td");
+    total.innerText = element.discountPrice;
 
-//     let row = document.createElement("tr");
-//     row.append(imageTd, nameTd, qty, total);
+    let row = document.createElement("tr");
+    row.append(imageTd, nameTd, qty, total);
 
-//     //   displayData(row);
-//     //   console.log(row);
-//     document.querySelector("tbody").append(row)
-//     });
+    //   displayData(row);
+    //   console.log(row);
+    document.querySelector("tbody").append(row)
+    });
+}
+
+
+// function displayData(row) {
+// //   document.getElementsByTagName("tbody").innerText = "Hello";
 // }
+function handleQtyChange(e, elem) {
+  let updatedPrice = elem.discountPrice * e.target.value;
+//   console.log(updatedPrice)
+  let localCartData = JSON.parse(localStorage.getItem("cart-products"));
+  let finalizedCart = localCartData.map((el) => {
+    if (el.id == elem.id) {
+    //   console.log(updatedPrice)
+      el.discountPrice=updatedPrice
+      return el;
+    }
+    return el
+  });
 
+  // localStorage setting updated price
+  localStorage.setItem('cart-finalised',JSON.stringify(finalizedCart))
+  let prod =JSON.parse(localStorage.getItem('cart-finalised'))
+//   console.log(prod[0].discountPrice)
+  displayCart(prod)
 
-// // function displayData(row) {
-// // //   document.getElementsByTagName("tbody").innerText = "Hello";
-// // }
-// function handleQtyChange(e, elem) {
-//   let updatedPrice = elem.discountPrice * e.target.value;
-// //   console.log(updatedPrice)
-//   let localCartData = JSON.parse(localStorage.getItem("cart-products"));
-//   let finalizedCart = localCartData.map((el) => {
-//     if (el.id == elem.id) {
-//     //   console.log(updatedPrice)
-//       el.discountPrice=updatedPrice
-//       return el;
-//     }
-//     return el
-//   });
+}
 
-//   // localStorage setting updated price
-//   localStorage.setItem('cart-finalised',JSON.stringify(finalizedCart))
-//   let prod =JSON.parse(localStorage.getItem('cart-finalised'))
-// //   console.log(prod[0].discountPrice)
-//   displayCart(prod)
+function handleProdRemove(e, element) {
+  // remove product from existing arr
+  let arr = prod.filter((elem) => elem != element);
+  localStorage.setItem("cart-products", JSON.stringify(arr));
+  console.log(JSON.parse(localStorage.getItem("cart-products")).length);
+}
 
-// }
+function handleInformation() {
+  event.preventDefault();
+  window.location.replace("./information.html");
+}
 
-// function handleProdRemove(e, element) {
-//   // remove product from existing arr
-//   let arr = prod.filter((elem) => elem != element);
-//   localStorage.setItem("cart-products", JSON.stringify(arr));
-//   console.log(JSON.parse(localStorage.getItem("cart-products")).length);
-// }
-
-// function handleInformation() {
-//   event.preventDefault();
-//   window.location.replace("./information.html");
-// }
-
-// // checkout button
-// document
-//   .querySelector("#continue-checkout")
-//   .addEventListener("click", function () {
-//     handleInformation();
-//   });
+// checkout button
+document
+  .querySelector("#continue-checkout")
+  .addEventListener("click", function () {
+    handleInformation();
+  });
 
 </script>
