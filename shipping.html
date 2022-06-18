@@ -28,14 +28,14 @@
                     <div class="cbox1">
                         <p>Contact</p>
                         <!-- email -->
-                        <p>workmailvicky101@gmail.com</p>
+                        <p id="email"></p>
                     </div>
                     <hr>
                     <!-- Edited by Abhishek -->
                     <div class="cbox1">
                         <p>Ship to</p>
                         <!-- Address -->
-                        <p>Type Address</p>
+                        <p id="address"></p>
                     </div>
                 </div>
 
@@ -43,28 +43,28 @@
                     <h3>Shipping method</h3>
                     <div id="shipping-method">
                         <div class="shipbox">
-
-
                             <!-- add radiobutton like image -->
                             <div id="ship">
-                                <p>Free Shipping (Cash on Delivery)</p>
-                                <p id="ship-eligibility">This shipping option is eligible for Cash on Delivery.</p>
-
-
-
-
-
-
+                                <!-- <p></p>
+                                <input type="radiobutton" -->
+                                <input type="radio" name="DeliveryOption" id="standard" checked>
+                                <label for="standard">Free Shipping (Cash on Delivery)
+                                    <br>
+                                    This shipping option is eligible for Cash on Delivery</labl>
                             </div>
                             <div class="free">
                                 <h2>Free</h2>
                             </div>
-
                         </div>
                         <hr>
                         <div id="shipbox">
-                            <p><span></span> Standard(3-5 Business Days)</p>
-                            <h2 id="free">Free</h2>
+                            <div>
+                                <input type="radio" name="DeliveryOption" id="fee" >
+                                <label for="free">Standard(3-5 Business Days)</labl>
+                            </div>
+                            <div class="free">
+                                <h2>Free</h2>
+                            </div>
                         </div>
 
 
@@ -119,7 +119,6 @@
 </body>
 
 </html>
-<<<<<<< HEAD
 
 <script>
     document.querySelector('#shipping-btn').addEventListener('click', handlePayment);
@@ -129,6 +128,3 @@
         window.location.replace("./payment.html")
     }
 </script>
-=======
-<script src="./shipping.js"></script>
->>>>>>> 2f7f6353a82f0e6bfbe9bf8feb07e1a3c0e7498a
