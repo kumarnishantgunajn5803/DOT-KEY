@@ -1,5 +1,5 @@
 // #crouser
-let imgArr = [
+let imgArr_id5 = [
     "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/BBB-Live-Now-Banner-Desktop.gif?v=1655305012",
     "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/CICA_SPF_Home_Screen_Desktop_Banner.png?v=1655304812",
     "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/serum_esk.png?v=1655304812",
@@ -7,7 +7,7 @@ let imgArr = [
     "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-Vit-C_5.jpg?v=1651751278"
 ]
 
-let url_arr = [
+let url_arr_id5 = [
     "https://www.dotandkey.com/", "https://www.google.com/", "https://www.w3schools.com/", "https://www.dotandkey.com/", "https://developer.mozilla.org/en-US/"
 ]
 
@@ -17,7 +17,7 @@ let round_btn3 = document.querySelector("#round3_id5");
 let round_btn4 = document.querySelector("#round4_id5");
 let round_btn5 = document.querySelector("#round5_id5");
 
-let img = document.querySelector("#crouser_img_id5");
+let img_id5 = document.querySelector("#crouser_img_id5");
 let imgNum = 0;
 
 if (imgNum == 0) {
@@ -28,8 +28,8 @@ if (imgNum == 0) {
     round_btn5.style.backgroundColor = "white";
 }
 
-let btn1 = document.querySelector("#btn1_id5");
-btn1.addEventListener("click", function () {
+let btn1_id5 = document.querySelector("#btn1_id5");
+btn1_id5.addEventListener("click", function () {
 
     if (imgNum == 1) {
         console.log("move to upto 50% off green");
@@ -73,17 +73,17 @@ btn1.addEventListener("click", function () {
     }
 
     if (imgNum == 0) {
-        imgNum = imgArr.length - 1;
+        imgNum = imgArr_id5.length - 1;
     }
     else {
         imgNum--;
     }
-    img.src = imgArr[imgNum];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr_id5[imgNum];
+    img_id5.dataset.url = url_arr_id5[imgNum];
 })
 
-let btn2 = document.querySelector("#btn2_id5");
-btn2.addEventListener("click", move_forward);
+let btn2_id5 = document.querySelector("#btn2_id5");
+btn2_id5.addEventListener("click", move_forward);
 
 
 function move_forward() {
@@ -127,20 +127,20 @@ function move_forward() {
         round_btn4.style.backgroundColor = "white";
         round_btn5.style.backgroundColor = "white";
     }
-    if (imgNum == imgArr.length - 1) {
+    if (imgNum == imgArr_id5.length - 1) {
         imgNum = 0;
     } else {
         imgNum++;
     }
-    img.src = imgArr[imgNum];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr_id5[imgNum];
+    img_id5.dataset.url = url_arr_id5[imgNum];
 }
 // round button
 
 round_btn1.addEventListener("click", function () {
     imgNum = 0;
-    img.src = imgArr[0];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr_id5[0];
+    img_id5.dataset.url = url_arr_id5[imgNum];
     round_btn1.style.backgroundColor = "grey";
     round_btn2.style.backgroundColor = "white";
     round_btn3.style.backgroundColor = "white";
@@ -151,8 +151,8 @@ round_btn1.addEventListener("click", function () {
 
 round_btn2.addEventListener("click", function () {
     imgNum = 1;
-    img.src = imgArr[imgNum];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr[imgNum];
+    img_id5.dataset.url = url_arr_id5[imgNum];
     round_btn1.style.backgroundColor = "white";
     round_btn2.style.backgroundColor = "grey";
     round_btn3.style.backgroundColor = "white";
@@ -163,8 +163,8 @@ round_btn2.addEventListener("click", function () {
 
 round_btn3.addEventListener("click", function () {
     imgNum = 2;
-    img.src = imgArr[imgNum];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr_id5[imgNum];
+    img_id5.dataset.url = url_arr_id5[imgNum];
     round_btn1.style.backgroundColor = "white";
     round_btn2.style.backgroundColor = "white";
     round_btn3.style.backgroundColor = "grey";
@@ -174,8 +174,8 @@ round_btn3.addEventListener("click", function () {
 
 round_btn4.addEventListener("click", function () {
     imgNum = 3;
-    img.src = imgArr[imgNum];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr_id5[imgNum];
+    img_id5.dataset.url = url_arr_id5[imgNum];
     round_btn1.style.backgroundColor = "white";
     round_btn2.style.backgroundColor = "white";
     round_btn3.style.backgroundColor = "white";
@@ -185,8 +185,8 @@ round_btn4.addEventListener("click", function () {
 
 round_btn5.addEventListener("click", function () {
     imgNum = 4;
-    img.src = imgArr[imgNum];
-    img.dataset.url = url_arr[imgNum];
+    img_id5.src = imgArr_id5[imgNum];
+    img_id5.dataset.url = url_arr_id5[imgNum];
     round_btn1.style.backgroundColor = "white";
     round_btn2.style.backgroundColor = "white";
     round_btn3.style.backgroundColor = "white";
@@ -221,7 +221,7 @@ let imgNum_id6 = 0;
 if (imgNum_id6 == 0) {
     let img_cr6 = document.querySelector("#cr_img6");
     img_cr6.src = img_Arr_id6[imgNum_id6];
-    img_cr6.dataset.url = url_arr[imgNum_id6];
+    img_cr6.dataset.url = url_arr_id6[imgNum_id6];
     round_btn1_id6.style.backgroundColor = "grey";
     round_btn2_id6.style.backgroundColor = "white";
     round_btn3_id6.style.backgroundColor = "white";
@@ -232,7 +232,7 @@ round_btn1_id6.addEventListener("click", function () {
     imgNum_id6 = 0;
     let img_cr6 = document.querySelector("#cr_img6");
     img_cr6.src = img_Arr_id6[imgNum_id6];
-    img_cr6.dataset.url = url_arr[imgNum_id6];
+    img_cr6.dataset.url = url_arr_id6[imgNum_id6];
     round_btn1_id6.style.backgroundColor = "grey";
     round_btn2_id6.style.backgroundColor = "white";
     round_btn3_id6.style.backgroundColor = "white";
@@ -242,7 +242,7 @@ round_btn2_id6.addEventListener("click", function () {
     imgNum_id6 = 1;
     let img_cr6 = document.querySelector("#cr_img6");
     img_cr6.src = img_Arr_id6[imgNum_id6];
-    img_cr6.dataset.url = url_arr[imgNum_id6];
+    img_cr6.dataset.url = url_arr_id6[imgNum_id6];
     round_btn1_id6.style.backgroundColor = "white";
     round_btn2_id6.style.backgroundColor = "grey";
     round_btn3_id6.style.backgroundColor = "white";
@@ -252,7 +252,7 @@ round_btn3_id6.addEventListener("click", function () {
     imgNum_id6 = 2;
     let img_cr6 = document.querySelector("#cr_img6");
     img_cr6.src = img_Arr_id6[imgNum_id6];
-    img_cr6.dataset.url = url_arr[imgNum_id6];
+    img_cr6.dataset.url = url_arr_id6[imgNum_id6];
     round_btn1_id6.style.backgroundColor = "white";
     round_btn2_id6.style.backgroundColor = "white";
     round_btn3_id6.style.backgroundColor = "grey";
