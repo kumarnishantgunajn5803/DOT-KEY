@@ -97,25 +97,29 @@
         <div id="sub-total">
             <div>
                 <p>Subtotal</p>
-                <p>₹<span>1</span></p>
+                <!-- subtotal -->
+                <p>₹<span id="cart-total"></span></p>
             </div>
             <div>
                 <p>Shipping</p>
-                <p>calculated at next step</p>
+                <!-- shipping type -->
+                <p>Free</p>
             </div>
         </div>
         <hr>
         <div id="total">
             <div>
                 <p>Total</p>
-                <p>Including ₹333.99 in taxes</p>
+                <!-- after coupan discout -->
+                <p>₹<span id="total-after-discount"></span></p>
             </div>
-            <p>INR<span>₹</span></p>
+            <p>Including ₹90.92 in taxes</p>
         </div>
     </div>
 </body>
 
 </html>
+<<<<<<< HEAD
 
 <script>
     document.querySelector('#shipping-btn').addEventListener('click', handlePayment);
@@ -125,3 +129,6 @@
         window.location.replace("./payment.html")
     }
 </script>
+=======
+<script src="./shipping.js"></script>
+>>>>>>> 2f7f6353a82f0e6bfbe9bf8feb07e1a3c0e7498a
