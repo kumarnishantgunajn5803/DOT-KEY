@@ -78,7 +78,16 @@ select{
 
 
 }
-label+button{
+.checkbox{
+    display: flex;
+    
+}
+.checkbox label{
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.checkbox+button{
     display: grid;
     font-size: 14px;
     border: transparent;
