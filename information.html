@@ -23,7 +23,7 @@
             <h3>Contact Information</h3>
             <p>Already have an account? Log In to redeem Skindulgence Points.<span>Log in</span></p>
             <form>
-                <input type="email" placeholder="Enter Email">
+                <input type="email" id='email' placeholder="Enter Email" required>
                 <!-- Edited by Abhishek -->
                 <div class="checkbox">
                     <input  type="checkbox" id="news-letter">
@@ -41,10 +41,10 @@
                     <option value="Pakistan">Pakistan</option>
                 </select>
                 <div id="full-name">
-                    <input type="text" id="first-name" placeholder="First name">
+                    <input type="text" id="first-name" placeholder="First name" required>
                     <input type="text" id="last-name" placeholder="Last name">
                 </div>
-                <input type="text" id="addr" placeholder="Address">
+                <input type="text" id="addr" placeholder="Address" required>
                 <input type="text" id="addr-optional" placeholder="Apartment, suite, etc. (optional)">
                 <div id="locality">
                     <input type="text" id="city" placeholder="City">
@@ -88,7 +88,7 @@
                         <option value="Lakshadeep">Lakshadeep</option>
                         <option value="Pondicherry">Pondicherry</option>
                       </select>
-                    <input type="tel" placeholder="Phone">
+                    <input type="tel" id="mbl" placeholder="Phone">
                     <!-- Edited by Abhishek -->
                     <div class="checkbox">
                         <input type="checkbox" id="saveInfo">
@@ -124,7 +124,7 @@
         <div id="sub-total">
             <div>
                 <p>Subtotal</p>
-                <p>₹<span>1</span></p>
+                <p>₹<span id="cart-total">1</span></p>
             </div>
             <div>
                 <p>Shipping</p>

@@ -147,7 +147,7 @@ function handleProdRemove(element) {
   displayData(data);
 }
 
-function handleInformation(event) {
+function handleInformation() {
   event.preventDefault();
   window.location.replace("./information.html");
 }
