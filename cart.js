@@ -42,6 +42,9 @@ let Products = [
 // getting localStorage value by key
 let prod = JSON.parse(localStorage.getItem("cart-products")) || [];
 
+// Initial product table
+window.onload = displayData(prod);
+
 // checkout button
 document
   .querySelector("#continue-checkout")
@@ -49,8 +52,7 @@ document
     handleInformation();
   });
 
-// Initial product table
-displayData(prod);
+// displayData(prod);
 
 // iterating pro and appending to table
 function displayData(prod) {
@@ -73,7 +75,7 @@ function displayData(prod) {
     // btn.style.color='white';
     btn.addEventListener("click", function () {
       event.target.parentNode.parentNode.remove();
-      handleProdRemove(event, element);
+      handleProdRemove(element);
     });
     nameTd.append(name, btn);
 
@@ -121,7 +123,7 @@ function handleQtyChange(e, elem) {
   // console.log(Array.isArray(localCartData));
   localCartData.map((el) => {
     if (el.id == elem.id) {
-      el.discountPrice = updatedPrice;
+      el.discountPrice = Math.floor(updatedPrice);
       el.qty = e.target.value;
       return el;
     }
@@ -133,9 +135,13 @@ function handleQtyChange(e, elem) {
   displayData(data);
 }
 
-function handleProdRemove(e, element) {
+function handleProdRemove(element) {
   // remove product from existing arr
-  let arr = prod.filter((elem) => elem != element);
+  let remove = JSON.parse(localStorage.getItem("cart-products"));
+  // console.log(element);
+  // console.log(data);
+  let arr = remove.filter((elem) => elem.id != element.id);
+  console.log(arr);
   localStorage.setItem("cart-products", JSON.stringify(arr));
   let data = JSON.parse(localStorage.getItem("cart-products"));
   displayData(data);
