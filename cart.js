@@ -6,7 +6,7 @@ let Products = [
     discountPrice: 670.05,
     qty: 1,
     id: 1,
-    totalPrice: 0,
+    totalPrice: 670.05,
   },
   {
     image:
@@ -15,7 +15,7 @@ let Products = [
     discountPrice: 598.0,
     qty: 1,
     id: 2,
-    totalPrice: 0,
+    totalPrice: 598.0,
   },
   {
     image:
@@ -24,7 +24,7 @@ let Products = [
     discountPrice: 565.01,
     qty: 1,
     id: 3,
-    totalPrice: 0,
+    totalPrice: 565.01,
   },
   {
     image:
@@ -33,7 +33,7 @@ let Products = [
     discountPrice: 565.0,
     qty: 1,
     id: 4,
-    totalPrice: 0,
+    totalPrice: 565.01,
   },
 ];
 //  setting dummy localstore value
