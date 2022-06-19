@@ -1,0 +1,258 @@
+#body{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 88, 88);
+  
+    
+    /*------------ CART INFO------------ */
+
+
+}
+a{
+    color: #ff95c2;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#head> img{
+    margin:auto;
+    display: block;
+    width: 35%;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#head{
+text-align: center;
+margin-bottom: 30px;
+
+}
+    
+
+#overall-cart{
+  width: 55%;
+  padding-right: 60px;
+}
+input{
+    padding: 9px;
+    /* border-color: rgb(187, 183, 183); */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 183, 183);
+}
+h2{
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+    font-size: 19px;
+    font-weight: lighter;
+    color: black;
+
+}
+tbody img {
+    width: 120%;
+    margin-right: 20px;
+}
+
+tbody p {
+    font-size: small;
+    width: 80%;
+    margin-left: 20px;
+    line-height: 30px;
+}
+#contactBox >hr{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cbox1{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom:10px; */
+}
+#shipping-method{
+display: grid;
+border: 1px solid grey;
+margin-top: 20px;
+border-radius: 5px;
+margin-bottom: 50px ;
+}
+.shipbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+   
+}
+#email{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    
+
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    
+}
+#shipto{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+#method{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+.change{
+    font-size: small;
+    color: #f85599;
+}
+#main{
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+#cod{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#billing{
+    border: 1px solid gray;
+    border-radius: 5px;margin-top: 20px;
+    
+    
+}
+label{
+   padding: 20px ;
+   color: black;
+   
+
+}
+.fee{
+    margin-left: 10px;
+}
+
+
+
+#shipping-info{
+    
+    display: grid;
+    cursor: pointer;
+    /* border: 1px solid grey; */
+
+
+}
+#contactBox{
+    border: 1px solid grey;
+    display: grid;
+    /* justify-content: space-around; */
+    padding: 10px 20px ;
+    border-radius: 5px;
+    margin-bottom: 50px ;
+
+}
+
+#getOrderUpdate{
+    display: grid;
+    cursor : pointer;
+    
+
+
+} 
+#shipping-btn{
+    margin-top: 20px;
+    
+}
+#btn{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* --------------CART PAYMENT------------------ */
+
+#cart{
+    
+   border-left: 1px solid rgb(196, 196, 196);
+    width: 40%;
+    background-color: #fafafa;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+#cart>h2{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color:
+    #616160;
+    color:white;
+    padding: 10px 20px;
+    border: transparent;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+#discout-code{
+    margin-top: 20px;
+    padding-right: 140px;
+    margin-top: 20px;
+}
+#sub-total>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+h2 span{
+    color: #ff95c2;
+    cursor: pointer;
+}
+#total {
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+}
+#total>div>p+p{
+    font-size: small;
+}
+/* #total>div+p{
+    
+} */
+
+.bolder{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.bold{
+    font-weight: bolder;
+    font-size: 22px;
+}

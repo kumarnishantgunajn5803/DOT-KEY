@@ -47,10 +47,10 @@
                             <div id="ship">
                                 <!-- <p></p>
                                 <input type="radiobutton" -->
-                                <input type="radio" name="DeliveryOption" id="standard" checked>
+                                <input type="radio" name="DeliveryOption" class="fe" value="Free Shipping (Cash on Delivery)" checked>
                                 <label for="standard">Free Shipping (Cash on Delivery)
                                     <br>
-                                    This shipping option is eligible for Cash on Delivery</labl>
+                                 <p>This shipping option is eligible for Cash on Delivery</p> </label>
                             </div>
                             <div class="free">
                                 <h2>Free</h2>
@@ -59,10 +59,10 @@
                         <hr>
                         <div id="shipbox">
                             <div>
-                                <input type="radio" name="DeliveryOption" id="fee" >
+                                <input type="radio" name="DeliveryOption" class="fee" value="Standard(3-5 Business Days)">
                                 <label for="free">Standard(3-5 Business Days)</labl>
                             </div>
-                            <div class="free">
+                            <div id="free">
                                 <h2>Free</h2>
                             </div>
                         </div>
@@ -85,7 +85,9 @@
         <div>
             <table>
                 <tbody>
+                    <div class="tbody">
                     <!-- append tr with image , name, price -->
+                </div>
                 </tbody>
             </table>
         </div>
@@ -98,7 +100,7 @@
             <div>
                 <p>Subtotal</p>
                 <!-- subtotal -->
-                <p>₹<span id="cart-total"></span></p>
+                <p>₹<span id="cart-total" class = "bold"></span></p>
             </div>
             <div>
                 <p>Shipping</p>
@@ -111,7 +113,7 @@
             <div>
                 <p>Total</p>
                 <!-- after coupan discout -->
-                <p>₹<span id="total-after-discount"></span></p>
+                <p class = "bold">₹<span id="total-after-discount"></span></p>
             </div>
             <p>Including ₹90.92 in taxes</p>
         </div>

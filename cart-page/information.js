@@ -39,6 +39,7 @@ function displayData(data) {
   });
   // console.log("Working");
   document.querySelector("#cart-total").innerText = Math.floor(cartTotal);
+  document.querySelector("#cart-total2").innerText = Math.floor(cartTotal);
 }
 
 // let loginDetails = [];

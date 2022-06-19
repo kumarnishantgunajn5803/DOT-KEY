@@ -37,7 +37,7 @@ let Products = [
   },
 ];
 //  setting dummy localstore value
-// localStorage.setItem("cart-products", JSON.stringify(Products));
+localStorage.setItem("cart-products", JSON.stringify(Products));
 
 // getting localStorage value by key
 let prod = JSON.parse(localStorage.getItem("cart-products")) || [];

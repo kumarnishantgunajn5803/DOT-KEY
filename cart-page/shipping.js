@@ -54,5 +54,17 @@ function displayData(data) {
 }
 
 function handlePayment() {
+  let elem = document.getElementsByName("DeliveryOption");
+  console.log(elem);
+  let DeliveryOption = "";
+  for (let i = 0; i < elem.length; i++) {
+    if (elem[i].checked) {
+      DeliveryOption = elem[i].value;
+    }
+  }
+  let shippingAddr = JSON.parse(localStorage.getItem("shipping-info")) || [];
+  shippingAddr.DeliveryOption = DeliveryOption;
+  localStorage.setItem("shipping-info", JSON.stringify(shippingAddr));
+  console.log(shippingAddr);
   window.location.replace("./payment.html");
 }
