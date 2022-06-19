@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179" type="image/png">
+    <title>Body Care Homepage- Dot & Key</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+         
+        #topbar{
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(21, 21, 18);
+            color: rgb(235, 220, 220);
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+        #navbar{
+            width: 100%;
+            height: 120px;
+            border: 1px solid #5c5c5c;
+            display: flex;
+            background-color: white;
+            position:fixed;
+            top: 35px;
+            z-index: 10;
+        }
+        #menu{
+            border: 1px solid transparent;
+            width: 28px;
+            height: 28px;
+            margin: 35px 0px 0px 55px;
+            cursor: pointer;
+        }
+        .bar{
+            height: 5px;
+            width: 100%;
+            background-color: #3C3C3C;
+            display: block;
+            border-radius: 7px;
+            transition: 0.7s ease;
+        }
+        #bar1{
+            transform: translateY(-4px);
+        }
+        #bar3{
+            transform: translateY(4px);
+        }
+        .change #bar1{
+            transform: translateY(4px)rotateZ(-45deg);
+        }
+        .change #bar3{
+            transform: translateY(-6px)rotateZ(45deg);
+        }
+        .change #bar2{
+            opacity: 0;
+        }
+        .popup{
+            background-color: white;
+        }
+        .nav li a {
+            color:#3c3c3c ;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+        }
+        .nav li a :hover{
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .nav li {
+            list-style:none;
+            padding:10px 0px;
+            margin-top:5px;
+        }
+        #logo{
+          margin-left: 600px;
+           
+            
+        }
+        #logo>img{
+            height: 96%;
+            width: 100%;
+             
+        }
+        .nav{
+            width: 100%;
+            margin-top: 160px;
+            transition: 0.7S ease;
+            display: none;
+            position: fixed;
+            overflow: scroll;
+            box-shadow: #3C3C3C;
+            
+        }
+        .change{
+            display: block;
+        }
+         .change .popup{
+            height: 500px;
+            border: 1px solid blue
+        }
+        #useritem{
+            /* border: 1px solid red; */
+            width: 150px;
+            height: 50px;
+            margin-left:300px;
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+        }
+        .use{
+            border: 1px solid blue;
+            height: 25px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        /* THIS IS SEARCH BUTTOM STYLING */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        .searchBox{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .searchText{
+            width: 0px;
+            border-radius: 5px;
+            border: none;
+             outline: none;
+            transition: all 0.2s linear;
+            color: rgb(5, 0, 0);
+            background-color: #D9E4E6;
+        }
+        .searchBtn{
+            width: 30px;
+            height: 30px;
+             background-color: #192A56;
+            color: rgb(252, 248, 248);
+            position: absolute;
+            margin-left:100px;
+            display: grid;
+            place-items: center;
+            border-radius:50%;
+        }
+        .searchBox:hover > .searchText{
+            width: 120px;
+            padding: 5px;
+            height: 30px;
+        }
+        #userinfo{
+            width: 150px;
+            height: 30px;
+            margin: 30px 0px 0px 18px;
+        }
+        .user{
+            /* border: 1px solid purple; */
+            width: 30px;
+            height: 30px;
+        }
+        #userinfo{
+            display: flex;
+            justify-content: space-around;
+        }
+        /* #flex{
+            border: 1px solid blue;
+            width: 100%;
+            height: 500px;
+        } */
+     
+
+    /* crouser */
+
+    #crouser{
+       
+         border: 1px solid transparent;
+        width: 100%;
+        height: auto;
+        
+        
+       position: relative;
+       top: 119px;
+    }
+    #crouser_img{
+        width: 100%;
+        border-radius: 30px;
+        
+    }
+    #crouser>button{
+        position: absolute;
+        top: 250px;
+        border-radius: 100%;
+        font-size: 45px;
+        border: 1px solid transparent;
+        width: 10px;
+        
+    }
+    #crouser>button:nth-child(2){
+        left: 65px;
+        
+   
+        background:0 0;
+            
+        color: #3c3c3c;
+        width: 17px;
+        height: 17px!important;
+}
+   
+    #crouser>button:nth-child(3){
+        right:  65px;
+        background:0 0;
+         
+        color: #3c3c3c;
+        width: 17px;
+        height: 17px!important;
+    }
+    #crouser:hover{
+        cursor: pointer;
+    }
+
+
+
+    /* Banner */
+
+    #banner{
+        width: 95%;
+        margin: auto;
+        margin-top: 150px;
+    }
+    #banner>img{
+        width: 100%;
+    }
+    
+
+    /*  navigator  */
+
+    #navigator{
+        border: 1px solid transparent;
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+        
+    }
+    #navigator_heading{
+        border: 1px solid transparent;
+        width: 30%;
+        margin: auto;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #navigator_heading>p{
+        font-family: roboto;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: #3c3c3c;
+        letter-spacing: 1px;
+    }
+    #navigator_heading>span{
+        font-family:Ubuntu,roboto;
+        font-style: italic;
+        font-size: 28px;
+         
+        line-height: 30px;
+        margin-top: 9px;
+        letter-spacing: 1.5px;
+         
+    }
+
+    #navigator_container{
+        border: 1px solid transparent;
+        width: 60%;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    #navigator_container>div{
+        border: 1px solid transparent;
+        width: 27%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+     .navigator_image>img{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+     }
+    .navigator_footer{
+        text-align: center;
+        padding: 15px;
+        font-family: roboto;
+        font-size: 20px;
+        line-height: 34px;
+        color: #3c3c3c;
+        font-weight: 400;
+        margin-bottom: -10px;
+        letter-spacing: 1.5px;
+         
+    }
+    .navigator_footer>p{
+        display: inline;
+        
+    }
+
+
+    /* banner-2 */
+
+    #banner_2{
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    #banner_2>img{
+        width: 100%;
+    }
+  
+
+    /*  BODY  SCRUB Buff’ that Ruff’  */
+
+    .products{
+        border: 1px solid transparent;
+        width: 53%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    
+
+      /* products_heading */
+    .products_heading {
+        border: 1px solid transparent;
+        width: fit-content;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .products_heading>span{
+        text-align: center;
+         display:  block;
+         font-family: roboto;
+         letter-spacing: 2.5px;
+
+    }
+    .products_heading>span:nth-child(1){
+        font-size: 20px;
+        color: #3c3c3c;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    .products_heading>span:nth-child(2){
+        font-size: 30px;
+        color: #3c3c3c;
+        line-height: 39px;
+        font-weight: 700;
+    }
+    .products_heading>span:nth-child(3){
+        font-size: 18px;
+        color: #d0538c;
+        line-height: 34px;
+        font-weight: 700;
+        font-family: roboto,sans-serif !important;
+    }
+
+  /* product_container */
+  .product_container{
+        border: 1px solid transparent;
+        width:100%;
+        margin: auto;
+        margin-top: 70px;
+        display: flex;
+         justify-content: space-between;
+         
+  }
+   .product_container>div{
+    border: 1px solid transparent;
+    width: 46%;
+    position: relative;
+    
+    
+    
+
+   }
+   .product_img>img{
+    width: 100%;
+    height: 100%;
+   }
+    .product_container_big{
+        width: 53%;
+        border: 1px solid transparent;
+        margin:auto;
+        margin-top: 70px;
+        
+    }
+    .product_container_big>div>.product_img{
+        width: 100%;
+        height: 440px;
+        position: relative;
+    }
+
+
+   .save{
+    border: 1px solid transparent;
+    width: 36%;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    background-color:#898983;
+     color: #ffffff;
+     font-family: roboto;
+     font-style: normal;
+     font-weight: 600;
+     letter-spacing: 3px;
+     word-spacing: 1px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+
+   }
+
+
+   .product_rating{
+    border: 1px solid transparent;
+    width: 100%;
+    height:35px;
+    text-align: center;
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: #3c3c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+
+   }
+   .product_rating>img{
+    border: 1px solid transparent;
+    margin-right: 3px;
+   }
+   .product_rating>p>span{
+    color: blue;
+   }
+   .product_title{
+    border: 1px solid transparent;
+    width: 100%;
+    height:70px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+   }
+   .product_title>p:nth-child(1){
+    font-family:roboto ;
+    font-weight: 700;
+    line-height: 30px;
+    color: #3c3c3c;
+   }
+   .product_title>p:nth-child(2){
+    font-family:roboto ;
+    font-weight: 400;
+    line-height: 30px;
+    color: #3c3c3c;
+    margin-top: 5px;
+   }
+
+   .product_price{
+    border: 1px solid transparent;
+    width: 100%;
+    height:35px;
+    text-align: center;
+    color:#ff6781;
+    font-style: normal;
+    font-weight: 700;
+    font-family: roboto;
+    word-spacing: 1.5px;
+    margin-bottom: 5px;
+   }
+   .product_price>p>span{
+    color:#808080;
+    font-family: roboto;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: normal;
+    text-decoration:line-through;
+   }
+
+
+   .add_to_cart{
+     background-color: #5c5c5c;
+     color: #ffffff;
+     font-family: roboto;
+     font-style: normal;
+     font-weight: 600;
+     letter-spacing: 1px;
+     word-spacing: 1px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+   }
+   .add_to_cart:hover{
+    cursor: pointer;
+   }
+
+   #footer_vedio{
+    border: 1px solid transparent;
+    width: 100%;
+    display: flex;
+    
+    padding: 0%;
+    margin: 0%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
+   #footer_vedio>div:first-child{
+    width: 80%;
+    margin: 0%;
+    border: 1px solid transparent;
+   }
+   #footer_vedio> iframe{
+    width: 100%;
+    height: 550px;
+    margin: 0%;
+   }
+   #footer_vedio>div:last-child{
+    width: 20%;
+    margin: 0%;
+    height: 100%;
+   }
+   #footer_vedio> img{
+    width: 25%;
+    height: 100%;
+    margin: 0%;
+   }
+
+   /* footer */
+
+   #footer{
+    border: 1px solid transparent;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+     
+   }
+   #footer_container{
+    display: flex;
+    justify-content: space-around;
+   }
+   #box1{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    margin-top: 100px;
+     
+   }
+   #box2,#box3{
+    color: #3c3c3c;
+
+    margin-top: 100px;
+   }
+   #box1>h3{
+    color: #3c3c3c;
+    letter-spacing: 4px;
+
+        margin-bottom: 5px;
+   }
+   #box2>p{
+    color: #3c3c3c;
+
+     margin-bottom: 30px;
+   }
+   #box2>p:hover{
+    cursor: pointer;
+   }
+   #box1>p:hover{
+    cursor: pointer;
+   }
+   #box2>h3{
+        margin-bottom: 35px;
+        color: #3c3c3c;
+        letter-spacing: 4px;
+
+   }
+   #box3>div{
+   
+    margin-bottom: 20px;
+    color: #3c3c3c;
+    letter-spacing: 4px;
+
+   }
+   #box3>h3{
+    color: #3c3c3c;
+    letter-spacing: 4px;
+
+        margin-bottom: 35px;
+   }
+#footer_input{
+    border:none;
+    border-bottom: 2px solid #3c3c3c;
+    width: 300px;
+    margin-right: 20px;
+    color: #000000;
+    height: 60px;
+    font-size: 20px;
+     
+}
+#footer_button{
+   border: 1px solid #3c3c3c;
+   width: 120px;
+   height: 60px;
+   border-radius: 0px;
+   color: white;
+   background-color: #3c3c3c;
+}
+#footer_button:hover{
+    cursor: pointer;
+}
+#social_media{
+    display: flex;
+    color: #3c3c3c;
+  margin-top: 40px;
+ 
+    
+}
+.footer_image{
+    margin-left: 20px;
+}
+.footer_image:hover{
+    cursor: pointer;
+}
+#copyright{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #3c3c3c;
+}
+.link>a{
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+
+
+    </style>
+     
+</head>
+<body>
+
+    
+    <!-- Navbar -->
+    <!-- <div id="navbar"> -->
+        <div id="topbar">UPTO 20% OFF SITEWIDE</div>
+        <div id="navbar">
+        <div id="menu" onclick="afterclick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+        </div>
+        <div class="popup">
+            <div id="flex">
+     <ul class="nav" id="nav">
+        <li><a href="#">WHAT'S NEW?</a></li>
+        <li><a href="#">PARTY TOP PICKS</a></li>
+        <li><a href="#">BEST SELLER</a></li>
+        <li><a href="#">SHOP BY INGRIDIENT</a></li>
+        <li><a href="#">SHOP BY CONCERN</a></li>
+        <li><a href="#">SHOP ALL PRODUCT</a></li>
+        <li><a href="#">HAIR CARE</a></li>
+        <li><a href="#">BODY CARE</a></li>
+        <li><a href="#">IKWI NUTRITION</a></li>
+        <li><a href="#">KNOW US BETTER</a></li>
+    </ul>
+    </div>
+    </div>
+    <div id="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt="">
+    </div>
+    <div id="useritem">
+        <!-- search -->
+        <div class="searchBox">
+            <input type="text" class="searchText" placeholder="Search">
+         <a href="#" class="searchBtn">
+                <i class="fas fa-search fa-1x"></i>
+            </a>
+        </div>
+    </div>
+    <div id="userinfo">
+        <!-- SHIPMENT -->
+        <div id="shipment" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-location-pin fa-2x"></i>
+            </a>
+        </div>
+        <!-- CART -->
+        <div id="cart" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </a>
+        </div>
+        <!-- LOGIN USER -->
+        <div id="login" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-user fa-2x"></i>
+            </a>
+        </div>
+    </div>
+        </div>
+       
+        </div>
+    <!-- </div> -->
+
+    <!-- crausers -->
+    <div id="crouser">
+        <img id="crouser_img" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/shop_all_desk_3_3.png?v=1653457175" alt="">
+        <button id="btn1"><</button>
+        <button  id="btn2">></button>
+
+    </div>
+
+     <!-- Banner -->
+
+     <div id="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-SPREAD-THE-LOVE-Desktop-Final_3.png?v=1638165803" alt="">
+
+     </div>
+
+
+     <!-- navigator -->
+
+     <div id="navigator">
+            <div id="navigator_heading"><P>Just In</P> <span><b> BODYCARE</b></span></div>
+
+            <div id="navigator_container">
+                <div> <a href="#body_butter"> 
+                    <div class="navigator_image"> 
+                     <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ROSE_2.png?v=1636617537" alt=""> 
+                    </div></a>
+                    <div class="navigator_footer">
+                        <p>Body</p> <b><i>Butter</i></b>
+                    </div>
+                </div>
+                <div> <a href="#serum_lotion"> 
+                    <div class="navigator_image"> 
+                             <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_1.png?v=1636623319" alt=""> 
+                    </div></a>
+                    <div class="navigator_footer">
+                        <p>Serum</p> <b><i>Lotion</i></b>
+                    </div>
+                </div>
+                <div> <a href="#body_scrub"> 
+                    <div class="navigator_image"> 
+                          <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1.3_d0fb05cd-1610-4b66-ad0d-391d4aad2676.png?v=1636537323" alt="">
+                    </div></a>
+                    <div class="navigator_footer">
+                        <p>Body</p> <b><i>Scrub</i></b>
+                    </div>
+                </div>
+                 
+            </div>
+
+     </div>
+
+
+     <!-- banner-2 -->
+
+     <div id="banner_2">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-Model-Image-Desktop_2_1ac15045-7c83-4680-9bd8-6d5a5878a0c4.png?v=1636955347" alt="">
+     </div>
+
+     
+     <!-- BODY  SCRUB Buff’ that Ruff’ -->
+
+       <div class="products">
+        <!-- products_heading -->
+          <div id="body_scrub" class="products_heading">
+              <span>BODY</span>
+              <span><i>SCRUB</i></span>
+              <span>Buff’ that Ruff’</span>
+
+          </div>
+
+          <!-- product_container -->
+          <div class="product_container">
+                <div>
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14.jpg?v=1646477249" alt="">
+                        <div class="save"><p>SAVE 10%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 4.8/5 <span>(33)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Vitamin C & Avalon Lemon</p>
+                        <p>Sugar Body Scrub</p>
+                    </div>
+                    <div class="product_price">
+                        <p><span>Rs: 545.00</span>  Rs: 490.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                            <p>ADD TO CART</p>
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-13.jpg?v=1646477177" alt="">
+                        <div class="save"><p>SAVE 10%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 4.8/5 <span>(33)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Damask Rose & Lavender</p>
+                        <p>Gel Body Scrub</p>
+                    </div>
+                    <div class="product_price">
+                         <p><span>Rs: 545.00</span> Rs: 490.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                        <p>ADD TO CART</p>
+                    </div>
+
+
+                </div>
+
+                 
+
+          </div>
+       </div>
+
+       <!-- SERUM  LOTIONS  Hydration’s your bae -->
+
+
+       <div class="products">
+        <!-- products_heading -->
+          <div id="serum_lotion" class="products_heading">
+              <span>SERUM</span>
+              <span><i>LOTIONS</i></span>
+              <span>Hydration’s your bae</span>
+
+          </div>
+
+          <!-- product_container -->
+          <div class="product_container">
+                <div>
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_5_1f30698f-72cf-4165-8bca-302aa29817e2.jpg?v=1646477193" alt="">
+                        <div class="save"><p>SAVE 10%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 4.8/5   <span>(33)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Damask Rose & Lavender</p>
+                        <p>Hydrating Hyaluronic Body Lotion</p>
+                    </div>
+                    <div class="product_price">
+                        <p><span>Rs: 595.00</span>  Rs: 535.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                            <p>ADD TO CART</p>
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_2.jpg?v=1646477397" alt="">
+                        <div class="save"><p>SAVE 10%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 4.8/5  <span>(20)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Avalon Lemon & Verbena</p>
+                        <p>Vitamin C Glow Body Lotion</p>
+                    </div>
+                    <div class="product_price">
+                         <p><span>Rs: 595.00</span>  Rs: 535.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                        <p>ADD TO CART</p>
+                    </div>
+
+
+                </div>
+
+                 
+
+          </div>
+         </div>
+
+     
+      <!-- BODY BUTTER Buttery, melt-in goodness-->
+
+      <div class="products">
+        <!-- products_heading -->
+          <div id="body_butter" class="products_heading">
+              <span>BODY</span>
+              <span><i>BUTTER </i></span>
+              <span>Buttery, melt-in goodness</span>
+
+          </div>
+
+          <!-- product_container -->
+          <div class="product_container">
+                <div>
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6.jpg?v=1644862704" alt="">
+                        <div class="save"><p>SAVE 15%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 5.0/5   <span>(35)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Cocoa & French Vanilla</p>
+                        <p>Rich Body Butter With 10% SHEA</p>
+                    </div>
+                    <div class="product_price">
+                        <p><span>Rs: 595.00</span> Rs: 505.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                            <p>ADD TO CART</p>
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2.png?v=1644862556" alt="">
+                        <div class="save"><p>SAVE 15%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 4.9/5  <span>(35)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Damask Rose & Lavender</p>
+                        <p>Velvet Body Butter With 5% SHEA</p>
+                    </div>
+                    <div class="product_price">
+                         <p><span>Rs: 595.00</span> Rs: 505.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                        <p>ADD TO CART</p>
+                    </div>
+
+
+                </div>
+
+                 
+
+          </div>
+         </div>
+
+         <div class="product_container_big">
+            <div>
+                <div class="product_img">
+                    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/long_3.png?v=1646650083" alt="">
+                    <div class="save"><p>SAVE 15%</p></div>
+                </div>
+                <div class="product_rating">
+                    <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                    <p> 4.8/5   <span>(26)</span></p>
+                </div>
+                <div class="product_title">
+                    <p>Avalon Lemon & Vitamin C</p>
+                    <p>Yoghurt Glow Body Moisturizer</p>
+                </div>
+                <div class="product_price">
+                    <p><span>Rs: 495.00</span> Rs: 445.00</p>
+                </div>
+                <div class="add_to_cart">
+                        <p>ADD TO CART</p>
+                </div>
+
+
+            </div>
+        </div> 
+        
+        <div class="products">
+            <!-- products_heading -->
+              <div class="products_heading">
+                  <span>OUR</span>
+                  <span><i>COMBOS </i></span>
+                  <span> </span>
+    
+              </div>
+    
+              <!-- product_container -->
+              <div class="product_container">
+                    <div>
+                        <div class="product_img">
+                            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_8.jpg?v=1643717568" alt="">
+                            <div class="save"><p>SAVE 10%</p></div>
+                        </div>
+                        <div class="product_rating">
+                            <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                            <p> 5.0/5   <span>(10)</span></p>
+                        </div>
+                        <div class="product_title">
+                            <p>Citrus Crush Combo</p>
+                            <p>Yoghurt Glow Body Moisturizer,Lotion</p>
+                        </div>
+                        <div class="product_price">
+                            <p><span>Rs: 1,140.00</span> Rs: 1,026.00</p>
+                        </div>
+                        <div class="add_to_cart">
+                                <p>ADD TO CART</p>
+                        </div>
+    
+    
+                    </div>
+                    <div>
+                        <div class="product_img">
+                            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_9.jpg?v=1643714860" alt="">
+                            <div class="save"><p>SAVE 10%</p></div>
+                        </div>
+                        <div class="product_rating">
+                            <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                            <p> 4.9/5  <span>(8)</span></p>
+                        </div>
+                        <div class="product_title">
+                            <p>Rosy Affair Combo</p>
+                            <p >Velvet Body Butter and Lotion </p>
+                        </div>
+                        <div class="product_price">
+                             <p><span>Rs: 1,140.00</span> Rs: 1,026.00</p>
+                        </div>
+                        <div class="add_to_cart">
+                            <p>ADD TO CART</p>
+                        </div>
+    
+    
+                    </div>
+    
+                     
+    
+              </div>
+         </div>
+     
+         <div class="products">
+            <div class="product_container">
+                <div >
+                    <div class="product_img">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_7.jpg?v=1643713066" alt="">
+                        <div class="save"><p>SAVE 10%</p></div>
+                    </div>
+                    <div class="product_rating">
+                        <img src="https://icon-library.com/images/rating-star-icon/rating-star-icon-28.jpg" alt="" width="30px">
+                        <p> 5.0/5   <span>(7)</span></p>
+                    </div>
+                    <div class="product_title">
+                        <p>Soft and Glow Combo</p>
+                        <p>Soft and Glow Comobo Lotion</p>
+                    </div>
+                    <div class="product_price">
+                        <p><span>Rs: 1,190.00</span> Rs: 774.00</p>
+                    </div>
+                    <div class="add_to_cart">
+                            <p>ADD TO CART</p>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            
+
+             
+
+      </div>
+
+
+
+      <div id="footer_vedio">
+        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YuM30jM381M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+         
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-Revised-Youtube-Desktop.png?v=1638165848" alt="">
+         
+      </div>  
+      
+      
+      <!-- footer -->
+
+
+      <div id="footer">
+        <hr>
+        <div id="footer_container">
+            <div id="box1">
+                <h3>GET TO KNOW US</h3>
+                <p> DOWNLOAD THE APP</p>
+                <p class="link"> <a href="AboutUS.html">ABOUT US</a> </p>
+                <p>CONTACT US </p>
+                <p>EARTHCARE</p>
+                <p>AFFILIATE PROGRAM</p>
+                <p>TERMS & CONDITIONS </p>
+                <p>REFUND & CANCELLATION </p>
+                <p>PRIVACY & POLICY</p>
+                <p>ORDER & SHIPPING</p>
+                <p>PAYMENT & TERMS</p>
+                <p>TERMS OF SERVICES</p>
+                <p>REFUND POLICY</p>
+
+            </div>
+
+            <div id="box2">
+                <h3>ALSO AVAILABLE ON</h3>
+                <p>NYKAA</p>
+                <p>AMAZON</p>
+                <p>FLIPKART</p>
+                <p>MYNTRA</p>
+
+
+            </div>
+
+            <div id="box3">
+                <h3>STAY UPDATED</h3>
+                <div>
+                    <input id="footer_input" type="text" placeholder="example@example.com">
+                    <button id="footer_button">SUBMIT</button>
+                </div>
+
+                <div id="social_media">
+                    <h3>FOLLOW US</h3>
+                    <img class="footer_image"
+                    width="30px"    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8EAgQAAADFxcWgoKC8vbxGRUZbWltTU1M0NDQoKSg4OThDQkNhYWFtbG0gISAsLixLSUsdHR11dXVnaGcODQ4YFhjx8fH3+PeysrKqqqpQT1B9fX1nZmdhYGHV1dXn6OeNjI2Eg4Td3t1WVFbS0dLq6eqXmJebm5sjICO4H7iJAAAD20lEQVR4nO3di3LaMBSE4ViAyQ1IAsQEaLnlQt7/Bcu0M50yMcFHVrUrsf8DZM4XEyC2LF9dwZpVu87L/FD3XB3ckJ5Vu5fNpJy6pm3RA5uqOpvF05/Bi4alJFx3SxsuLWE1L824lITrbeGj+y1coodvULX0OnrpCLstfCkId2Ub30E4RgvONG/n4xdu2wLJhbNBWx+78LU9sHBDtOKbAhzBg3CCZpxuHALILOwGARbuBxpyqrfW76LswmkYIK9wGwhYuAGaUt8q0Gv0IPyJttQX5IOCWRjuELIKwx3CwvXRmLrewx1CUuFHOCCpMNRnIa1wFRDIKQz5Ii3cNZpTU5m7MOQ7KaewExJIKQz6Z0gpnOQunN3lLqyCvtEwCtdBgYzCsG+lhVugQV+aZy/c+18qrI3vVbqxCs+sxSjRoC9Zz7I5d//RW61n6LmbtzSutbhJbkmQ7XKFG72jBzY3tAl76Hntmc6zuSl6XI/6JiHrVYnvujYJ9+hxPXo0CRP8M7y6Nwnf0ON6ZPr30O3Q43p0YxKu0eN69JC98NYkrNDjejTKXvgk4YUJE/q38G/5C02XRy9AiJ7WJ4vQSUiZhBLyJ+GRsEBP65OO4ZEwxdOlNuEzelqfTMIn9LQ+mYQj9LQ+mYS36Gm/q+rUZxOe+CH/hDtn3Dl1Wbo58OwVbuxV7sCrSk7+DnB358USfmQvfMleiFvIEEfo3Cp7Ie76Wywh7qx4JCHwu3kkIfB7XSThY/ZC4M3qkYSb7IXAJUWRhLgvbbGEwNWnkYS4L22xhOvshcCLxFGE0JPicYTIE6pxhPfZC5F7RsQRInfciyPEnWmLJexmL0SudI8jRK50jyNE3hUVQ4g80xZJOM1eeIdcnRlFCN2cJooQurVnFCF0m+QoQujNe2GEZy7iQ2/eC7JSoSi/9rhYLPr9wXC83MyhC93fe/U9Z7/qy3K/hYScSSghfyZhkqsvJZSQPwnTF35mL7TsOCAhZxJKyJ9JSH3PzKlMwgf0tD5JKCF/EqYvtOxmJiFnEkrIn4RHwjv0tD5JKCF/EqYvtOwjnKbQshe0hJxJKCF/Eh4JkTdueSehhPxJmL7Q8iTZNIWW58xIyJmEEvJnEvI9vrFBJiHfQ0YbZBICd/LyT8L0hZanA0rImYQXJkzy89Ak5HvodoMkTF/4mr3Q8sRjCTmTUEL+TELoDju+SZi+cCChhPRJKCF/JuEAPa1PEqYvnEgoIX0SSsifSQh8mpN/JiF0F13fhhJKSJ+EEvIn4YUJx+hpfRpLKCF9EkrIX/7C4ZmHchyV5Cd+b99t3P5/P4PkF79qWBJNnBzqAAAAAElFTkSuQmCC"
+                        alt="fb Error">
+                    <img class="footer_image"
+                    width="30px"    src="data:image/png;base64,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"
+                        alt="INSTA ERROR">
+                    <img class="footer_image"
+                    width="40px"    src="data:image/png;base64,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"
+                        alt="youtube Error">
+                </div>
+                <p id="copyright">© 2022 Dot & Key</p>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+</body>
+</html>
+ <script>
+    // #crouser
+
+    imgArr=[
+        "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/shop_all_desk_3_3.png?v=1653457175",
+        "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/bodycare_desktop.png?v=1639668460",
+        "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_home_4.png?v=1645176921"
+        
+    ]
+
+    let img=document.querySelector("#crouser_img");
+    let imgNum=0;
+    let btn1=document.querySelector("#btn1");
+    btn1.addEventListener("click", function(){
+        if(imgNum==0){
+            imgNum=imgArr.length-1;
+        }else{
+            imgNum--;
+        }
+        img.src=imgArr[imgNum];
+    })
+
+
+
+
+    let btn2=document.querySelector("#btn2");
+    btn2.addEventListener("click", function(){
+        if(imgNum==imgArr.length-1){
+            imgNum=0;
+        }else{
+            imgNum++;
+        }
+        img.src=imgArr[imgNum];
+    })
+ 
+    function afterclick(){
+        document.getElementById("menu").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+    }
+     
+
+
+
+ </script>
