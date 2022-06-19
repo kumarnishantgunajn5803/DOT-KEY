@@ -12,6 +12,10 @@ h1{
     text-align: center;
     margin-top: 20px;
 }
+#remove-btn{
+    border: 1px solid grey;
+    border-radius: 3px;
+}
 
 #cart-content{
     width: 92vw;

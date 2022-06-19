@@ -57,6 +57,17 @@ h2{
     color: black;
 
 }
+tbody img {
+    width: 120%;
+    margin-right: 20px;
+}
+
+tbody p {
+    font-size: small;
+    width: 80%;
+    margin-left: 20px;
+    line-height: 30px;
+}
 #contactBox >hr{
     margin-top: 8px;
     margin-bottom: 8px;
