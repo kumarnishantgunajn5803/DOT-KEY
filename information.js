@@ -41,7 +41,7 @@ function displayData(data) {
   document.querySelector("#cart-total").innerText = Math.floor(cartTotal);
 }
 
-// let loginDetails = [];
+let loginDetails = [];
 
 function shipping(event) {
   event.preventDefault();
@@ -54,7 +54,7 @@ function shipping(event) {
     addrOptional: document.querySelector("#addr-optional").value,
     mbl: document.querySelector("#mbl").value,
   };
-  // loginDetails.push(obj);
-  localStorage.setItem("shipping-info", JSON.stringify(obj));
+  loginDetails.push(obj);
+  localStorage.setItem("shipping-info", JSON.stringify(loginDetails));
   window.location.replace("./shipping.html");
 }
