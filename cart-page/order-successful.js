@@ -23,7 +23,7 @@ function handleOtp() {
   setTimeout(function () {
     //   clear the cart
     localStorage.setItem("cart-products", null);
-    window.location.replace("./cart.html");
+    window.location.replace("../index.html");
   }, 3000);
 }
 
