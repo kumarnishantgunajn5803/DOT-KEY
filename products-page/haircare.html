@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0px;
@@ -17,13 +20,201 @@
             box-sizing: border-box;
            
         }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+         
+        #topbar{
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(21, 21, 18);
+            color: rgb(235, 220, 220);
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+        #navbar{
+            width: 100%;
+            height: 120px;
+            border: 1px solid #5c5c5c;
+            display: flex;
+            background-color: white;
+            position:fixed;
+            top: 35px;
+            z-index: 10;
+        }
+        #menu{
+            border: 1px solid transparent;
+            width: 28px;
+            height: 28px;
+            margin: 35px 0px 0px 55px;
+            cursor: pointer;
+        }
+        .bar{
+            height: 5px;
+            width: 100%;
+            background-color: #3C3C3C;
+            display: block;
+            border-radius: 7px;
+            transition: 0.7s ease;
+        }
+        #bar1{
+            transform: translateY(-4px);
+        }
+        #bar3{
+            transform: translateY(4px);
+        }
+        .change #bar1{
+            transform: translateY(4px)rotateZ(-45deg);
+        }
+        .change #bar3{
+            transform: translateY(-6px)rotateZ(45deg);
+        }
+        .change #bar2{
+            opacity: 0;
+        }
+        .popup{
+            background-color: white;
+        }
+        .nav li a {
+            color:#3c3c3c ;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+        }
+        .nav li a :hover{
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .nav li {
+            list-style:none;
+            padding:10px 0px;
+            margin-top:5px;
+        }
+        #logo{
+          margin-left: 600px;
+           
+            
+        }
+        #logo>img{
+            height: 96%;
+            width: 100%;
+             
+        }
+        .nav{
+            width: 100%;
+            margin-top: 160px;
+            transition: 0.7S ease;
+            display: none;
+            position: fixed;
+            overflow: scroll;
+            box-shadow: #3C3C3C;
+            
+        }
+        .change{
+            display: block;
+        }
+         .change .popup{
+            height: 500px;
+            border: 1px solid blue
+        }
+        #useritem{
+            /* border: 1px solid red; */
+            width: 150px;
+            height: 50px;
+            margin-left:300px;
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+        }
+        .use{
+            border: 1px solid blue;
+            height: 25px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        /* THIS IS SEARCH BUTTOM STYLING */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        .searchBox{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .searchText{
+            width: 0px;
+            border-radius: 5px;
+            border: none;
+             outline: none;
+            transition: all 0.2s linear;
+            color: rgb(5, 0, 0);
+            background-color: #D9E4E6;
+        }
+        .searchBtn{
+            width: 30px;
+            height: 30px;
+             background-color: #192A56;
+            color: rgb(252, 248, 248);
+            position: absolute;
+            margin-left:100px;
+            display: grid;
+            place-items: center;
+            border-radius:50%;
+            
+        }
+        .searchBox:hover > .searchText{
+            width: 120px;
+            padding: 5px;
+            height: 30px;
+        }
+        #userinfo{
+            width: 150px;
+            height: 30px;
+            margin: 30px 0px 0px 18px;
+            
+        }
+        .user{
+            /* border: 1px solid purple; */
+            width: 30px;
+            height: 30px;
+        }
+        #userinfo{
+            display: flex;
+            justify-content: space-around;
+        }
+        /* #flex{
+            border: 1px solid blue;
+            width: 100%;
+            height: 500px;
+        } */
+     
          #crouser{
        
        border: 1px solid transparent;
       width: 100%;
       height: auto;
+     /* position: relative; */
      position: relative;
-     margin-top: 20px;
+       top: 119px;
      
   }
   #crouser_img{
@@ -523,6 +714,65 @@
     </style>
 </head>
 <body>
+
+    <div id="topbar">UPTO 20% OFF SITEWIDE</div>
+        <div id="navbar">
+        <div id="menu" onclick="afterclick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+        </div>
+        <div class="popup">
+            <div id="flex">
+     <ul class="nav" id="nav">
+        <li><a href="#">WHAT'S NEW?</a></li>
+        <li><a href="#">PARTY TOP PICKS</a></li>
+        <li><a href="#">BEST SELLER</a></li>
+        <li><a href="#">SHOP BY INGRIDIENT</a></li>
+        <li><a href="#">SHOP BY CONCERN</a></li>
+        <li><a href="#">SHOP ALL PRODUCT</a></li>
+        <li><a href="#">HAIR CARE</a></li>
+        <li><a href="#">BODY CARE</a></li>
+        <li><a href="#">IKWI NUTRITION</a></li>
+        <li><a href="#">KNOW US BETTER</a></li>
+    </ul>
+    </div>
+    </div>
+    <div id="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt="">
+    </div>
+    <div id="useritem">
+        <!-- search -->
+        <div class="searchBox">
+            <input type="text" class="searchText" placeholder="Search">
+         <a href="#" class="searchBtn">
+                <i class="fas fa-search fa-1x"></i>
+            </a>
+        </div>
+    </div>
+    <div id="userinfo">
+        <!-- SHIPMENT -->
+        <div id="shipment" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-location-pin fa-2x"></i>
+            </a>
+        </div>
+        <!-- CART -->
+        <div id="cart" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </a>
+        </div>
+        <!-- LOGIN USER -->
+        <div id="login" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-user fa-2x"></i>
+            </a>
+        </div>
+    </div>
+        </div>
+       
+        </div>
     
 <!-- crausers -->
 <div id="crouser">
@@ -728,141 +978,156 @@
 
 let hairCare=[
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MORINGASHAMPOO.jpg?v=1655302883" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MORINGASHAMPOO.jpg?v=1655302883" ,
       save:"SAVE 30%",
       rating:"4.8/5",
       stocks:"(43)",
-      title:"Argan Oil Anti Hairfall Shampoo With Moringa & Keratin  ",
+      name:"Argan Oil Anti Hairfall Shampoo With Moringa & Keratin  ",
       s_price:"Rs: 695.00",
       price:"Rs: 487.00",
-      produt_id:1,
+      id:"A1",
+      totalPrice:487,
+      discountPrice:487
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MORINGAMASK.jpg?v=1655303151" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MORINGAMASK.jpg?v=1655303151" ,
       save:"SAVE 30%",
       rating:"4.7/5",
       stocks:"(24)",
-      title:"Pea Peptide Strengthening Moringa & Argan Hair Mask",
+      name:"Pea Peptide Strengthening Moringa & Argan Hair Mask",
       s_price:"Rs: 645.00",
       price:"Rs: 452.00",
-      produt_id:2,
-        
+      id:"A2",
+      totalPrice:452,
+      discountPrice:452
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_4_d34e6033-1d52-4a86-85c5-6419c4d1fdb1.jpg?v=1655310462" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_4_d34e6033-1d52-4a86-85c5-6419c4d1fdb1.jpg?v=1655310462" ,
       save:"SAVE 30%",
       rating:"4.8/5",
       stocks:"(27)",
-      title:"Pea Peptide + Cysteine Hair Volumising Serum",
+      name:"Pea Peptide + Cysteine Hair Volumising Serum",
       s_price:"Rs: 745.00",
       price:"Rs: 522.00",
-      produt_id:3
-
+      id:"A3",
+      totalPrice:522,
+      discountPrice:522 
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_1.jpg?v=1655310429" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_1.jpg?v=1655310429" ,
       save:"SAVE 30%",
       rating:"4.9/5",
       stocks:"(22)",
-      title:"AHA Exfoliation Apple Cider Hair & Scalp Scrub",
+      name:"AHA Exfoliation Apple Cider Hair & Scalp Scrub",
       s_price:"Rs: 695.00",
       price:"Rs: 487.00",
-      produt_id:4
-
+      id:"A4",
+      totalPrice:487,
+      discountPrice:487
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/DAMAGESHAMPOO.jpg?v=1655303107" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/DAMAGESHAMPOO.jpg?v=1655303107" ,
       save:"SAVE 30%",
       rating:"4.7/5",
       stocks:"(28)",
-      title:"Quinoa Protein & Olive Damage Repair Shampoo",
+      name:"Quinoa Protein & Olive Damage Repair Shampoo",
       s_price:"Rs: 695.00",
       price:"Rs: 487.00",
-      produt_id:5
+      id:"A5",
+      totalPrice: 487,
+      discountPrice:487
 
 
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_1.jpg?v=1655310406" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_1.jpg?v=1655310406" ,
       save:"SAVE 30%",
       rating:"4.6/5",
       stocks:"(18)",
-      title:"Hyaluronic Hydrating Quinoa Protein & Olive Hair Mask",
+      name:"Hyaluronic Hydrating Quinoa Protein & Olive Hair Mask",
       s_price:"Rs: 645.00",
       price:"Rs: 452.00",
-      produt_id:6
-
+      id:"A6",
+      totalPrice: 452 ,
+      discountPrice:452
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_1_7e78739e-57e0-4fc0-bffe-f68bd86ab876.jpg?v=1655310503" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_1_7e78739e-57e0-4fc0-bffe-f68bd86ab876.jpg?v=1655310503" ,
       save:"SAVE 30%",
       rating:"4.9/5",
       stocks:"(17)",
-      title:"Hyaluronic + Ceramide Hair Treatment Serum",
+      name:"Hyaluronic + Ceramide Hair Treatment Serum",
       s_price:"Rs: 745.00",
       price:"Rs: 522.00",
-      produt_id:7
-
+      id:"A7",
+      totalPrice: 522 ,
+      discountPrice:522
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_7.jpg?v=1643096418" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_7.jpg?v=1643096418" ,
       save:"SAVE 30%",
       rating:"5.0/5",
       stocks:"(10)",
-      title:"Ditch the Damage Combo",
+      name:"Ditch the Damage Combo",
       s_price:"Rs: 2,085.00",
       price:"Rs: 1,460.00",
-      produt_id:8
+      id:"A8",
+      totalPrice: 1460,
+      discountPrice:1460
 
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_6_44a76a9c-93bc-4179-a6f8-bc5f0794ee05.jpg?v=1643096708" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_6_44a76a9c-93bc-4179-a6f8-bc5f0794ee05.jpg?v=1643096708" ,
       save:"SAVE 30%",
       rating:"5.0/5",
       stocks:"(9)",
-      title:"Care & Repair Power Combo",
+      name:"Care & Repair Power Combo",
       s_price:"Rs: 1,340.00",
       price:"Rs: 938.00",
-      produt_id:9
-
+      id:"A9",
+      totalPrice: 938 ,
+      discountPrice:938
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_5.jpg?v=1643113374" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_5.jpg?v=1643113374" ,
       save:"SAVE 30%",
       rating:"4.8/5",
       stocks:"(15)",
-      title:"Hairfall Farewell Combo",
+      name:"Hairfall Farewell Combo",
       s_price:"Rs: 2,085.00",
       price:"Rs: 1,460.00",
-      produt_id:10
+      id:"A10",
+      totalPrice: 1460 ,
+      discountPrice:1460
 
         
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_6.jpg?v=1643115129" ,
+      image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_6.jpg?v=1643115129" ,
       save:"SAVE 30%",
       rating:"4.8/5",
       stocks:"(12)",
-      title:"Strong & Shiny Hair Combo",
+      name:"Strong & Shiny Hair Combo",
       s_price:"Rs: 1,340.00",
       price:"Rs: 938.00",
-      produt_id:11
-
+      id:"A11",
+      totalPrice:938,
+      discountPrice:938
         
     }
 ]
 
 let container=document.querySelector("#products");
 displayProduct( hairCare);
-let cartArr=JSON.parse(localStorage.getItem("cart-info"))||[];
+let cartArr=JSON.parse(localStorage.getItem("cart-products"))||[];
 
 
   function displayProduct( hairCare){
@@ -873,7 +1138,7 @@ let cartArr=JSON.parse(localStorage.getItem("cart-info"))||[];
           let div_img=document.createElement("div");
            div_img.setAttribute("class","product_img");
                let image=document.createElement("img");
-                   image.setAttribute("src", element.img);
+                   image.setAttribute("src", element.image);
      
            let save_div=document.createElement("div");
             save_div.setAttribute("class","save");
@@ -894,7 +1159,7 @@ let cartArr=JSON.parse(localStorage.getItem("cart-info"))||[];
       let product_title=document.createElement("div");
       product_title.setAttribute("class","product_title");
          let product_p=document.createElement("p");
-          product_p.innerText=element.title;
+          product_p.innerText=element.name;
            
           let product_price=document.createElement("div");
           product_price.setAttribute("class","product_price");
@@ -910,10 +1175,10 @@ let cartArr=JSON.parse(localStorage.getItem("cart-info"))||[];
             button.addEventListener("click", function(){
 
               console.log(element)
-                 if(add_to_cart(element.produt_id)==true){
+                 if(add_to_cart(element.id)==true){
                   alert("Product added to cart successfully");
                    cartArr.push(element);
-                   localStorage.setItem("cart-info",JSON.stringify(cartArr));
+                   localStorage.setItem("cart-products",JSON.stringify(cartArr));
                  }else{
                   alert("Product already in the cart")
                  }
@@ -936,7 +1201,7 @@ let cartArr=JSON.parse(localStorage.getItem("cart-info"))||[];
 
    function add_to_cart(id){
             for(let i=0;i<cartArr.length;i++){
-              if(cartArr[i].produt_id==id){
+              if(cartArr[i].id===id){
                 return false;
               }
             }

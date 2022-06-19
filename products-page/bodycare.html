@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179" type="image/png">
     <title>Body Care Homepage- Dot & Key</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -16,131 +19,185 @@
             padding: 0px;
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
+            
         }
-
-        /* Navbar */
-        /* #navbar{
-        border: 1px solid black;
-        height: 150px;
-        width: 100%;
-        margin: auto;
-        position: sticky;
-        top: 0px;
-        margin-top: 5px;
-        background-color:white;
-    } */
-    body{
-        overflow: scroll;
-    }
-            #gray{
-                background-color: #3c3c3c;
-                width: 100%;
-                height: 40px;
-                position: sticky;
-                top: 0px;
-            }
-           #container{
-               
-               width: 90%;
-               margin: auto;
-               height: 98%;
-               display: flex;
-               justify-content: space-between;
-               margin-top: 10px;
-               
-               background-color: white;
-              
-               
-               
-           }
-
-           #main_nav{
-               margin: 0px;
-               padding: 0px;
-               height: 90px;
-               position:sticky;
-               top: 0px;
-               width: 100%;
-               background-color: white;
-               box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-               
-           }
-           #container>div:first-child{
-               width: 20%;
-                
-               height: 100%;
-               display: flex;
-               justify-content:center;
-               align-items: center;
-               
-           }
-           #container>div:last-child{
-               width: 80%;
-                
-               height: 80%;
-               font-size: 17px;
-               display: flex;
-               justify-content:space-evenly;
-               align-items: center;
-               font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-               font-weight: 500;
-                
-               border-radius: 10px;
-
-           }
-           p+div{
-               display: flex;
-               background-color: #f2fdff;
-               justify-content:center;
-               align-items: center;
-               box-sizing: border-box;
-               width: 20%;
-               height: 76%;
-               /* padding: 10px; */
-               color: blueviolet;
-               border-radius: 10px;
-           }
-
-           p+div>img{
-               width: 29px;
-               height: 29px;
-               margin-left: 10px;
-           }
-            select{
-                border: none;
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-               font-size: 17px;
-               font-weight: 500;
-            }
-            button{
-                border: 1px solid red;
-                border-radius: 8px;
-                 width:8%;
-                 height: 70%;
-                 background-color: white;
-                 font-size: 17px;
-                 color: red;
-            }
-            #container>div:last-child>p:hover{
-                color:red;
-                 
-                cursor:pointer;
-            }
-            #container>div:last-child>button:hover{
-                color:red;
-                background-color: #f6dcdd;
-                cursor:pointer;
-            }
-            #container>div:last-child>select:hover{
-                color:red;
-                 
-                cursor:pointer;
-            }
-            #container>div:last-child>div:hover{
-                 
-                background-color: #d7e5ef;
-                cursor:pointer;
-            }
+         
+        #topbar{
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(21, 21, 18);
+            color: rgb(235, 220, 220);
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+        #navbar{
+            width: 100%;
+            height: 120px;
+            border: 1px solid #5c5c5c;
+            display: flex;
+            background-color: white;
+            position:fixed;
+            top: 35px;
+            z-index: 10;
+        }
+        #menu{
+            border: 1px solid transparent;
+            width: 28px;
+            height: 28px;
+            margin: 35px 0px 0px 55px;
+            cursor: pointer;
+        }
+        .bar{
+            height: 5px;
+            width: 100%;
+            background-color: #3C3C3C;
+            display: block;
+            border-radius: 7px;
+            transition: 0.7s ease;
+        }
+        #bar1{
+            transform: translateY(-4px);
+        }
+        #bar3{
+            transform: translateY(4px);
+        }
+        .change #bar1{
+            transform: translateY(4px)rotateZ(-45deg);
+        }
+        .change #bar3{
+            transform: translateY(-6px)rotateZ(45deg);
+        }
+        .change #bar2{
+            opacity: 0;
+        }
+        .popup{
+            background-color: white;
+        }
+        .nav li a {
+            color:#3c3c3c ;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+        }
+        .nav li a :hover{
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .nav li {
+            list-style:none;
+            padding:10px 0px;
+            margin-top:5px;
+        }
+        #logo{
+          margin-left: 600px;
+           
+            
+        }
+        #logo>img{
+            height: 96%;
+            width: 100%;
+             
+        }
+        .nav{
+            width: 100%;
+            margin-top: 160px;
+            transition: 0.7S ease;
+            display: none;
+            position: fixed;
+            overflow: scroll;
+            box-shadow: #3C3C3C;
+            
+        }
+        .change{
+            display: block;
+        }
+         .change .popup{
+            height: 500px;
+            border: 1px solid blue
+        }
+        #useritem{
+            /* border: 1px solid red; */
+            width: 150px;
+            height: 50px;
+            margin-left:300px;
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+        }
+        .use{
+            border: 1px solid blue;
+            height: 25px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        /* THIS IS SEARCH BUTTOM STYLING */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        .searchBox{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .searchText{
+            width: 0px;
+            border-radius: 5px;
+            border: none;
+             outline: none;
+            transition: all 0.2s linear;
+            color: rgb(5, 0, 0);
+            background-color: #D9E4E6;
+        }
+        .searchBtn{
+            width: 30px;
+            height: 30px;
+             background-color: #192A56;
+            color: rgb(252, 248, 248);
+            position: absolute;
+            margin-left:100px;
+            display: grid;
+            place-items: center;
+            border-radius:50%;
+        }
+        .searchBox:hover > .searchText{
+            width: 120px;
+            padding: 5px;
+            height: 30px;
+        }
+        #userinfo{
+            width: 150px;
+            height: 30px;
+            margin: 30px 0px 0px 18px;
+        }
+        .user{
+            /* border: 1px solid purple; */
+            width: 30px;
+            height: 30px;
+        }
+        #userinfo{
+            display: flex;
+            justify-content: space-around;
+        }
+        /* #flex{
+            border: 1px solid blue;
+            width: 100%;
+            height: 500px;
+        } */
      
 
     /* crouser */
@@ -150,9 +207,10 @@
          border: 1px solid transparent;
         width: 100%;
         height: auto;
+        
+        
        position: relative;
-       margin-top: 20px;
-       
+       top: 119px;
     }
     #crouser_img{
         width: 100%;
@@ -353,7 +411,7 @@
     border: 1px solid transparent;
     width: 46%;
     position: relative;
-    background-color: white;
+    
     
     
 
@@ -632,34 +690,64 @@
     
     <!-- Navbar -->
     <!-- <div id="navbar"> -->
-        <div id="gray"></div>
-        
-        <div id="main_nav">
-        
-            <div id="container">
-                <div>
-                       <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
-                </div>
-                <div>
-                    <select  >
-                        <option value=""><p>COURSES</p></option>
-                        <option value="">FT Web D</option>
-                        <option value="">PT web D</option>
-                        <option value="">Data AnalY.</option>
-                    </select>
-                    <p>FEES & ISA</p>
-                    <p>ABOUT US</p>
-                    <p>HIRE FROM US</p>
-                    <p>FAQ</p>
-                    <p>EVENTS</p>
-                    <div>
-                        <p>REFER & EARN</p>
-                        <img src="https://www.masaischool.com/img/referral/hand.png" alt="">
-                    </div>
-                    <button>LOGIN</button>
-                </div>
-           </div>
-         </div>
+        <div id="topbar">UPTO 20% OFF SITEWIDE</div>
+        <div id="navbar">
+        <div id="menu" onclick="afterclick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+        </div>
+        <div class="popup">
+            <div id="flex">
+     <ul class="nav" id="nav">
+        <li><a href="#">WHAT'S NEW?</a></li>
+        <li><a href="#">PARTY TOP PICKS</a></li>
+        <li><a href="#">BEST SELLER</a></li>
+        <li><a href="#">SHOP BY INGRIDIENT</a></li>
+        <li><a href="#">SHOP BY CONCERN</a></li>
+        <li><a href="#">SHOP ALL PRODUCT</a></li>
+        <li><a href="#">HAIR CARE</a></li>
+        <li><a href="#">BODY CARE</a></li>
+        <li><a href="#">IKWI NUTRITION</a></li>
+        <li><a href="#">KNOW US BETTER</a></li>
+    </ul>
+    </div>
+    </div>
+    <div id="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt="">
+    </div>
+    <div id="useritem">
+        <!-- search -->
+        <div class="searchBox">
+            <input type="text" class="searchText" placeholder="Search">
+         <a href="#" class="searchBtn">
+                <i class="fas fa-search fa-1x"></i>
+            </a>
+        </div>
+    </div>
+    <div id="userinfo">
+        <!-- SHIPMENT -->
+        <div id="shipment" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-location-pin fa-2x"></i>
+            </a>
+        </div>
+        <!-- CART -->
+        <div id="cart" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </a>
+        </div>
+        <!-- LOGIN USER -->
+        <div id="login" class="user">
+            <a href="https://www.masaischool.com/">
+                <i class="fa-solid fa-user fa-2x"></i>
+            </a>
+        </div>
+    </div>
+        </div>
+       
+        </div>
     <!-- </div> -->
 
     <!-- crausers -->
@@ -736,7 +824,7 @@
           <div class="product_container">
                 <div>
                     <div class="product_img">
-                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14.jpg?v=1646477249" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/LEMONSCRUB.jpg?v=1655303198" alt="">
                         <div class="save"><p>SAVE 10%</p></div>
                     </div>
                     <div class="product_rating">
@@ -800,7 +888,7 @@
           <div class="product_container">
                 <div>
                     <div class="product_img">
-                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_5_1f30698f-72cf-4165-8bca-302aa29817e2.jpg?v=1646477193" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ROSELOTION.jpg?v=1655303248" alt="">
                         <div class="save"><p>SAVE 10%</p></div>
                     </div>
                     <div class="product_rating">
@@ -822,7 +910,7 @@
                 </div>
                 <div>
                     <div class="product_img">
-                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_2.jpg?v=1646477397" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_1_1.jpg?v=1655310547" alt="">
                         <div class="save"><p>SAVE 10%</p></div>
                     </div>
                     <div class="product_rating">
@@ -1146,7 +1234,10 @@
         img.src=imgArr[imgNum];
     })
  
-     
+    function afterclick(){
+        document.getElementById("menu").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+    }
      
 
 
