@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179" type="image/png">
     <title>Body Care Homepage- Dot & Key</title>
+    <link rel="stylesheet" href="../common/navbar.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
@@ -14,191 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-            
-        }
-         
-        #topbar{
-            height: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(21, 21, 18);
-            color: rgb(235, 220, 220);
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            position: sticky;
-            top: 0px;
-            z-index: 10;
-        }
-        #navbar{
-            width: 100%;
-            height: 120px;
-            border: 1px solid #5c5c5c;
-            display: flex;
-            background-color: white;
-            position:fixed;
-            top: 35px;
-            z-index: 10;
-        }
-        #menu{
-            border: 1px solid transparent;
-            width: 28px;
-            height: 28px;
-            margin: 35px 0px 0px 55px;
-            cursor: pointer;
-        }
-        .bar{
-            height: 5px;
-            width: 100%;
-            background-color: #3C3C3C;
-            display: block;
-            border-radius: 7px;
-            transition: 0.7s ease;
-        }
-        #bar1{
-            transform: translateY(-4px);
-        }
-        #bar3{
-            transform: translateY(4px);
-        }
-        .change #bar1{
-            transform: translateY(4px)rotateZ(-45deg);
-        }
-        .change #bar3{
-            transform: translateY(-6px)rotateZ(45deg);
-        }
-        .change #bar2{
-            opacity: 0;
-        }
-        .popup{
-            background-color: white;
-        }
-        .nav li a {
-            color:#3c3c3c ;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bolder;
-        }
-        .nav li a :hover{
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .nav li {
-            list-style:none;
-            padding:10px 0px;
-            margin-top:5px;
-        }
-        #logo{
-          margin-left: 600px;
-           
-            
-        }
-        #logo>img{
-            height: 96%;
-            width: 100%;
-             
-        }
-        .nav{
-            width: 100%;
-            margin-top: 160px;
-            transition: 0.7S ease;
-            display: none;
-            position: fixed;
-            overflow: scroll;
-            box-shadow: #3C3C3C;
-            
-        }
-        .change{
-            display: block;
-        }
-         .change .popup{
-            height: 500px;
-            border: 1px solid blue
-        }
-        #useritem{
-            /* border: 1px solid red; */
-            width: 150px;
-            height: 50px;
-            margin-left:300px;
-            margin-top: 20px;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid transparent;
-        }
-        .use{
-            border: 1px solid blue;
-            height: 25px;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-        }
-        /* THIS IS SEARCH BUTTOM STYLING */
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        a,
-        a:hover {
-            text-decoration: none;
-        }
-        .searchBox{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .searchText{
-            width: 0px;
-            border-radius: 5px;
-            border: none;
-             outline: none;
-            transition: all 0.2s linear;
-            color: rgb(5, 0, 0);
-            background-color: #D9E4E6;
-        }
-        .searchBtn{
-            width: 30px;
-            height: 30px;
-             background-color: #192A56;
-            color: rgb(252, 248, 248);
-            position: absolute;
-            margin-left:100px;
-            display: grid;
-            place-items: center;
-            border-radius:50%;
-        }
-        .searchBox:hover > .searchText{
-            width: 120px;
-            padding: 5px;
-            height: 30px;
-        }
-        #userinfo{
-            width: 150px;
-            height: 30px;
-            margin: 30px 0px 0px 18px;
-        }
-        .user{
-            /* border: 1px solid purple; */
-            width: 30px;
-            height: 30px;
-        }
-        #userinfo{
-            display: flex;
-            justify-content: space-around;
-        }
-        /* #flex{
-            border: 1px solid blue;
-            width: 100%;
-            height: 500px;
-        } */
-     
 
     /* crouser */
 
@@ -690,63 +508,113 @@
     
     <!-- Navbar -->
     <!-- <div id="navbar"> -->
-        <div id="topbar">UPTO 20% OFF SITEWIDE</div>
-        <div id="navbar">
-        <div id="menu" onclick="afterclick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-        </div>
-        <div class="popup">
-            <div id="flex">
-     <ul class="nav" id="nav">
-        <li><a href="#">WHAT'S NEW?</a></li>
-        <li><a href="#">PARTY TOP PICKS</a></li>
-        <li><a href="#">BEST SELLER</a></li>
-        <li><a href="#">SHOP BY INGRIDIENT</a></li>
-        <li><a href="#">SHOP BY CONCERN</a></li>
-        <li><a href="#">SHOP ALL PRODUCT</a></li>
-        <li><a href="#">HAIR CARE</a></li>
-        <li><a href="#">BODY CARE</a></li>
-        <li><a href="#">IKWI NUTRITION</a></li>
-        <li><a href="#">KNOW US BETTER</a></li>
-    </ul>
-    </div>
-    </div>
-    <div id="logo">
-        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt="">
-    </div>
-    <div id="useritem">
-        <!-- search -->
-        <div class="searchBox">
-            <input type="text" class="searchText" placeholder="Search">
-         <a href="#" class="searchBtn">
-                <i class="fas fa-search fa-1x"></i>
-            </a>
-        </div>
-    </div>
-    <div id="userinfo">
-        <!-- SHIPMENT -->
-        <div id="shipment" class="user">
-            <a href="https://www.masaischool.com/">
-                <i class="fa-solid fa-location-pin fa-2x"></i>
-            </a>
-        </div>
-        <!-- CART -->
-        <div id="cart" class="user">
-            <a href="https://www.masaischool.com/">
-                <i class="fa-solid fa-cart-shopping fa-2x"></i>
-            </a>
-        </div>
-        <!-- LOGIN USER -->
-        <div id="login" class="user">
-            <a href="https://www.masaischool.com/">
-                <i class="fa-solid fa-user fa-2x"></i>
-            </a>
-        </div>
-    </div>
-        </div>
-       
+        <div class="navbar-container">
+            <div id="topbar">UPTO 20% OFF SITEWIDE</div>
+            <div id="navbar">
+                <div id="menu" onclick="afterclick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+    
+                <div class="popup">
+                    <div id="flex">
+                        <ul class="nav" id="nav">
+                            <li><a href="#">WHAT'S NEW?</a></li>
+                            <li><a href="#">PARTY TOP PICKS</a></li>
+                            <li><a href="#">BEST SELLER</a></li>
+                            <li><a href="#">SHOP BY INGRIDIENT</a></li>
+                            <li><a href="#">SHOP BY CONCERN</a></li>
+                            <li><a href="#">SHOP ALL PRODUCT</a></li>
+                            <li><a href="#">HAIR CARE</a></li>
+                            <li><a href="#">BODY CARE</a></li>
+                            <li><a href="#">IKWI NUTRITION</a></li>
+                            <li><a href="#">KNOW US BETTER</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="useritem">
+                    <!-- search -->
+                    <div class="searchBox">
+                        <input type="text" class="searchText" placeholder="Search">
+                        <a href="#" class="searchBtn">
+                            <svg data-icon="search" viewBox="0 0 512 512" width="15px" height="15px">
+                                <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+                              </svg>
+                        </a>
+                    </div>
+                </div>
+                <div id="userinfo">
+    
+                    <!-- SHIPMENT -->
+                    <div id="shipment" class="user">
+                        <a href="https://www.masaischool.com/">
+                            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633">
+                        </a>
+                    </div>
+    
+                    <!-- CART -->
+                    <div id="cart" class="user">
+                        <a href="../cart-page/cart.html">
+                            <svg viewBox="-35 0 512 512.00102" xmlns="http://www.w3.org/2000/svg"><path d="m443.054688 495.171875-38.914063-370.574219c-.816406-7.757812-7.355469-13.648437-15.15625-13.648437h-73.140625v-16.675781c0-51.980469-42.292969-94.273438-94.273438-94.273438-51.984374 0-94.277343 42.292969-94.277343 94.273438v16.675781h-73.140625c-7.800782 0-14.339844 5.890625-15.15625 13.648437l-38.9140628 370.574219c-.4492192 4.292969.9453128 8.578125 3.8320308 11.789063 2.890626 3.207031 7.007813 5.039062 11.324219 5.039062h412.65625c4.320313 0 8.4375-1.832031 11.324219-5.039062 2.894531-3.210938 4.285156-7.496094 3.835938-11.789063zm-285.285157-400.898437c0-35.175782 28.621094-63.796876 63.800781-63.796876 35.175782 0 63.796876 28.621094 63.796876 63.796876v16.675781h-127.597657zm-125.609375 387.25 35.714844-340.097657h59.417969v33.582031c0 8.414063 6.824219 15.238282 15.238281 15.238282s15.238281-6.824219 15.238281-15.238282v-33.582031h127.597657v33.582031c0 8.414063 6.824218 15.238282 15.238281 15.238282 8.414062 0 15.238281-6.824219 15.238281-15.238282v-33.582031h59.417969l35.714843 340.097657zm0 0"></path></svg>
+                        </a>
+                    </div>
+    
+                    <!-- LOGIN USER -->
+                    <div id="login" class="user">
+                        <a href="../login-page/login.html">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240
+                                            c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M297.833,301h-83.667C144.964,301,76.669,332.951,31,401.458V512h450V401.458C435.397,333.05,367.121,301,297.833,301z
+                                             M451.001,482H451H61v-71.363C96.031,360.683,152.952,331,214.167,331h83.667c61.215,0,118.135,29.683,153.167,79.637V482z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="logo">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
+                    alt="">
+            </div>
         </div>
     <!-- </div> -->
 
@@ -1243,3 +1111,4 @@
 
 
  </script>
+ <script src="../common/navbar.js"></script>
