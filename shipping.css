@@ -150,6 +150,9 @@ h2 {
 
 
 }
+.fee:checked{
+    color: #ff95c2;
+}
 
 label {
     margin-left: 10px;
@@ -157,7 +160,7 @@ label {
 
 .fee {
     margin-left: 20px;
-    background-color: #ff95c2;
+   
     cursor: pointer;
 
 }

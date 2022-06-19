@@ -59,20 +59,34 @@ font-size: 12px;
     display: flex;
     width: 42%;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 #whatsapp img{
     width: 10%;
-    justify-content: right;
-    align-items: center;
+    margin-left: 10px;
+   
 }
-td img{
-    width: 30%;
+tbody img {
+    width: 120%;
+    margin-right: 20px;
 }
-tbody td{
-    height: 300px;
-    overflow: scroll;
+
+tbody p {
+    font-size: small;
+    width: 80%;
+    margin-left: 20px;
+    line-height: 30px;
 }
-    
+.Info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+
+  
 
 
 input{
@@ -94,6 +108,12 @@ h2{
     padding: 20px;
     margin-top: 30px;
     border-radius: 7px;
+    margin-bottom: 20px;
+}
+#otp-confirm{
+    width: 40%;
+    display: block;
+    margin: auto;
 }
 
 
