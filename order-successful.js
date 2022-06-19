@@ -12,10 +12,19 @@ function handleOtp() {
   }
   document.querySelector("#box1").innerText = "";
   // Add a Div of saying order is successfull "Congratulations Order placed successfully page with redirect to homepage"--Abhishek
-
+  let h2 = document.createElement("h2");
+  h2.innerText = "Order Placed Successfully";
+  h2.style.color = "green";
+  let p = document.createElement("p");
+  p.innerText = "Page will redirect to Homepage";
+  p.style.color = "blue";
+  document.querySelector("#box1").append(h2, p);
   // after 3 second back to home page
-
-  // clear the cart
+  setTimeout(function () {
+    //   clear the cart
+    localStorage.setItem("cart-products", null);
+    window.location.replace("./cart.html");
+  }, 3000);
 }
 
 // document
@@ -29,16 +38,16 @@ console.log(shippingAddr);
 window.onload = displayData(data, shippingAddr);
 
 function displayData(data, shippingAddr) {
-  shippingAddr.forEach((elem) => {
-    document.querySelector("#contact-info").innerText = elem.email;
-    document.querySelector("#payment-methods").innerText =
-      "COD Cash on Delivery";
-    document.querySelector("#shipping-addr").innerText =
-      elem.addr + " " + elem.addrOptional;
-    document.querySelector("#billing-addr").innerText =
-      elem.addr + " " + elem.addrOptional;
-    document.querySelector("#shipping-method").innerText = elem.DeliveryOption;
-  });
+  //   shippingAddr.forEach((elem) => {
+  document.querySelector("#contact-info").innerText = shippingAddr.email;
+  document.querySelector("#payment-method").innerText = "COD Cash on Delivery";
+  document.querySelector("#shipping-addr").innerText =
+    shippingAddr.addr + " " + shippingAddr.addrOptional;
+  document.querySelector("#billing-addr").innerText =
+    shippingAddr.addr + " " + shippingAddr.addrOptional;
+  document.querySelector("#shipping-method").innerText =
+    shippingAddr.DeliveryOption;
+  //   });
   // setting email id
   //   document.querySelector("#email").innerText = shippingAddr.email;
   //   setting addr
