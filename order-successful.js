@@ -90,6 +90,8 @@ function displayData(data, shippingAddr) {
   //   total after discount
   //   document.querySelector("#total-after-discount").innerText =
   //     Math.floor(cartTotal);
+  document.querySelector("#cart-total").innerText = Math.floor(cartTotal);
+  document.querySelector("#cart-total2").innerText = Math.floor(cartTotal);
 }
 
 // function handlePayment() {

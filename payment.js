@@ -53,8 +53,9 @@ function displayData(data) {
   document.querySelector("#cart-total").innerText = Math.floor(cartTotal);
 
   //   total after discount
-  document.querySelector("#total-after-discount").innerText =
-    Math.floor(cartTotal);
+  // document.querySelector("#total-after-discount").innerText =
+  //   Math.floor(cartTotal);
+  document.querySelector("#cart-total2").innerText = Math.floor(cartTotal);
 }
 
 function handlePayment() {

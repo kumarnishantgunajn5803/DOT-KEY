@@ -170,3 +170,13 @@ justify-content: space-between;
 #total>div>p+p{
     font-size: small;
 }
+
+#otp-confirm:hover{
+    cursor: pointer;
+    background-color: #7f6a6a;
+}
+
+.bold{
+    font-weight: bolder;
+    font-size: 22px;
+}

@@ -254,3 +254,8 @@ h2 span {
 #total>div+p {
     font-size: small;
 }
+
+.bold{
+    font-weight: bolder;
+    font-size: 22px;
+}

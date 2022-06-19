@@ -65,9 +65,7 @@ h1{
     display: grid;
     justify-content:right;
     margin-left:84%;
-    
-
-    
+    /* padding:10px 15px; */
 }
 
 table{
@@ -120,4 +118,9 @@ tr>td:nth-child(2){
 #cart-value>div{
     display: flex;
     justify-content: space-evenly;
+}
+
+
+#continue-checkout:hover{
+    cursor: pointer;
 }
