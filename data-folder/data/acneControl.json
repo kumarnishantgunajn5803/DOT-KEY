@@ -1,0 +1,81 @@
+{
+ "Products": [
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_360x.jpg?v=1649323852",
+   "name": "CICA Niacinamide Night Gel With Green Tea, Tea Tree Oil & Hyaluronic| Reduces Acne & Dark Spots | Oily, Acne Prone & Sensitive Skin| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.01",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_c062e82b-d61b-4fce-aff4-4cd2f46c6995_360x.jpg?v=1649326625",
+   "name": "Cica & Green Tea Face Wash With Salicylic| Treats Acne & Acne Scars| Oily, Acne Prone Skin| 100% Sulphate Free| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 395.00",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_3057d434-6349-42b8-aefe-1673c8d24265_360x.jpg?v=1649327316",
+   "name": "10% Niacinamide Face Serum With Zinc & Antioxidants| Treats Acne, Dark Spots & Acne Scars| For Oily, Sensitive ,Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_fbc8a03b-7baf-4bad-b5af-1197213a128e_360x.jpg?v=1649324873",
+   "name": "CICA & Niacinamide Face Toner With Green Tea & Tea Tree Oil| Reduces Acne & Dark Spots| For Oil Control & Skin Irritation | Oily, Sensitive & Acne Prone Skin| 100% Alcohol Free| Women & Men",
+   "originalPrice": "Rs: 495.00",
+   "discountPrice": "Rs: 395.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_2_ff47654b-ba0b-43c5-ac01-7888e451d4e7_360x.jpg?v=1646476750",
+   "name": "Salicylic & French Green Clay Face Mask With Match Tea| Reduces Acne, Dark Spots & Blemishes| Oily & Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 660.04",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_16adaf35-a138-4989-a2f0-e23e0dcd4578_360x.jpg?v=1649326809",
+   "name": "Cica Calming Rapid ACNE Relief GEL Mask",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 535.02",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_1_11bc8a1c-3330-413c-8aaf-bd1ebdb23dbe_360x.jpg?v=1646476045",
+   "name": "2% Salicylic Face Serum With Tea Tree Oil & Zinc | Treats Acne, Blemishes & Acne Scars| Oily, Acne Prone Skin| Women and Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_5fb360dd-6bd1-4242-8175-7ded79ad7ae3_360x.jpg?v=1654856547",
+   "name": "Cica Calming Acne Rescue Back & Body Spray| With Salicylic | Alcohol-Free",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 625.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/acne_2_360x.jpg?v=1647255939",
+   "name": "5 Steps To Acne Free Skin",
+   "originalPrice": "Rs: 2,375.00",
+   "discountPrice": "Rs: 1,995.00",
+   "discount": "Save 16%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/gel1_360x.jpg?v=1647327988",
+   "name": "Acne Fighting Trio",
+   "originalPrice": "Rs: 1,785.00",
+   "discountPrice": "Rs: 1,517.00",
+   "discount": "Save 15%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_3_663ef15f-3847-4e70-a9f8-3a9dd335bb72_360x.jpg?v=1648088753",
+   "name": "INSTANT BUBBLE DETOX CLAY MASK",
+   "originalPrice": "Rs: 975.00",
+   "discountPrice": "Rs: 780.00",
+   "discount": "Save 15%"
+  }
+ ]
+}

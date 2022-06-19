@@ -1,0 +1,102 @@
+{
+ "Products": [
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_9ceca45a-10b4-40ed-b077-28971a3c3775_360x.jpg?v=1649324721",
+   "name": "72 HR Hydrating Probiotic Gel Moisturizer For Face With Hyaluronic & Rice Water| For Healthy,Soft Skin| Combination, Dry Skin| Women & Men",
+   "originalPrice": "Rs: 745.00",
+   "discountPrice": "Rs: 670.05",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_3057d434-6349-42b8-aefe-1673c8d24265_360x.jpg?v=1649327316",
+   "name": "10% Niacinamide Face Serum With Zinc & Antioxidants| Treats Acne, Dark Spots & Acne Scars| For Oily, Sensitive ,Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_360x.jpg?v=1649323852",
+   "name": "CICA Niacinamide Night Gel With Green Tea, Tea Tree Oil & Hyaluronic| Reduces Acne & Dark Spots | Oily, Acne Prone & Sensitive Skin| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.01",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_3_360x.jpg?v=1648088593",
+   "name": "10% AHA + 2% BHA EXFOLIATING GLOW HYDRO PEEL",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.00",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-GreenClayListing_1_360x.jpg?v=1649655908",
+   "name": "Salicylic & French Green Clay Face Mask With Match Tea| Reduces Acne, Dark Spots & Blemishes| Oily & Acne Prone Skin| Women & Men",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 660.04",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_ahaexfoliatingserum_360x.jpg?v=1611030475",
+   "name": "HYALURONIC + CERAMIDE HYDRATING FACE SERUM",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_3_360x.jpg?v=1648088593",
+   "name": "12% AHA + 2% HYALURONIC EXFOLIATING SLEEP MASK",
+   "originalPrice": "Rs: 995.00",
+   "discountPrice": "Rs: 895.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MeltAwayMakeupRemoverBalm_360x.jpg?v=1610017453",
+   "name": "DEEP PORE FACIAL FOAM CLEANSER",
+   "originalPrice": "Rs: 425.00",
+   "discountPrice": "Rs: 395.00",
+   "discount": "Save 6%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_2_ff47654b-ba0b-43c5-ac01-7888e451d4e7_360x.jpg?v=1646476750",
+   "name": "2% Salicylic Face Serum With Tea Tree Oil & Zinc | Treats Acne, Blemishes & Acne Scars| Oily, Acne Prone Skin| Women and Men",
+   "originalPrice": "Rs: 665.00",
+   "discountPrice": "Rs: 598.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_4_85b8fcfc-89a1-49d0-bc95-e4d49dfd6619_360x.jpg?v=1646934817",
+   "name": "Watermelon Super Glow Vitamin C Face Wash Gel| For Oil Control & Deep Cleansing | Combination & Oily Skin |100% Sulphate Free| Women and Men",
+   "originalPrice": "Rs: 465.00",
+   "discountPrice": "Rs: 395.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_5fb360dd-6bd1-4242-8175-7ded79ad7ae3_360x.jpg?v=1654856547",
+   "name": "Watermelon Super Glow Matte Face Cream With Glycolic | Minimizes Pores & Evens Skin Tone| Combination & Oily skin| Women & Men",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 565.00",
+   "discount": "Save 5%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_4_763d27a2-de17-476f-9058-0891cd25b094_360x.jpg?v=1646476808",
+   "name": "5% AHA EXFOLIATING GLOW TONER",
+   "originalPrice": "Rs: 795.00",
+   "discountPrice": "Rs: 715.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_360x.png?v=1652588012",
+   "name": "HYDRATING ROSE WATER TONER",
+   "originalPrice": "Rs: 695.00",
+   "discountPrice": "Rs: 626.00",
+   "discount": "Save 10%"
+  },
+  {
+    "image":"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_c062e82b-d61b-4fce-aff4-4cd2f46c6995_360x.jpg?v=1649326625",
+   "name": "Cica Calming Rapid ACNE Relief GEL Mask",
+   "originalPrice": "Rs: 595.00",
+   "discountPrice": "Rs: 535.02",
+   "discount": "Save 10%"
+  }
+ ]
+}
