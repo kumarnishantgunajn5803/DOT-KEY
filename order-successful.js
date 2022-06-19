@@ -25,10 +25,20 @@ function handleOtp() {
 let data = JSON.parse(localStorage.getItem("cart-products")) || [];
 let shippingAddr = JSON.parse(localStorage.getItem("shipping-info")) || [];
 
-// console.log(shippingAddr);
+console.log(shippingAddr);
 window.onload = displayData(data, shippingAddr);
 
-function displayData(data) {
+function displayData(data, shippingAddr) {
+  shippingAddr.forEach((elem) => {
+    document.querySelector("#contact-info").innerText = elem.email;
+    document.querySelector("#payment-methods").innerText =
+      "COD Cash on Delivery";
+    document.querySelector("#shipping-addr").innerText =
+      elem.addr + " " + elem.addrOptional;
+    document.querySelector("#billing-addr").innerText =
+      elem.addr + " " + elem.addrOptional;
+    document.querySelector("#shipping-method").innerText = elem.DeliveryOption;
+  });
   // setting email id
   //   document.querySelector("#email").innerText = shippingAddr.email;
   //   setting addr
