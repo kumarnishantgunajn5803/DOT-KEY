@@ -17,6 +17,13 @@
 
 
 }
+h2{
+    color: black;
+    
+}
+h3{
+    color: black;       
+}
 
 #head> img{
     margin:auto;
@@ -31,12 +38,36 @@ text-align: center;
 margin-bottom: 30px;
 
 }
+#box1{
+    border: 1px solid grey;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 7px;
+    padding: 30px;
+}
+#center{
+    text-align: center;
+}
+#center>h2{
+    font-size: 28px;
+    color: black;
+}
+#center>p{
+font-size: 12px;
+}
+#whatsapp{
+    display: flex;
+    width: 42%;
+    justify-content: space-between;
+}
+#whatsapp img{
+    width: 10%;
+    justify-content: right;
+    align-items: center;
+}
     
 
-#overall-cart{
-  width: 60%;
-  padding-right: 30px;
-}
+
 input{
     padding: 9px;
     /* border-color: rgb(187, 183, 183); */
@@ -51,52 +82,16 @@ h2{
     font-weight: lighter;
 
 }
-#contact-info span{
-    color: #ff95c2;
-    cursor: pointer;
-
-}
-select{
-    margin-bottom: 15px;
-    padding: 12px;
-}
-#saveInfo{
-    
-    display: grid;
-    cursor: pointer;
-    
-
-}
-
-#getOrderUpdate{
-    display: grid;
-    cursor : pointer;
-    
-
-
-}
-.checkbox{
-    display: flex;
-    
-}
-.checkbox label{
-    line-height: normal;
-    margin-left: 10px;
-}
-
-.checkbox+button{
-    display: grid;
-    font-size: 14px;
-    border: transparent;
-    padding: 15px 20px;
-    background-color: 
-    #616160;
-    color: aliceblue;
-    margin-left: 480px;
+#shipping-info{
+    border: 1px solid grey;
+    padding: 20px;
+    margin-top: 30px;
     border-radius: 7px;
-    margin-bottom: 30px;
-    cursor: pointer;
 }
+
+
+
+
 
 /* --------------CART PAYMENT------------------ */
 

@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Order Confirmation</title>
     <link rel="stylesheet" href="order-successful.css">
 </head>
+
 <body id="body">
-    <div id = "overall-cart">
-        <div id = "head">
+    <div id="overall-cart">
+        <div id="head">
             <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Dot_Key_Logo.png">
-            <a href="#">Cart</a>
-            <span>></span>
-            <a href="#">Information</a>
-            <span>></span>
-            <a href="#">Shipping</a>
-            <span>></span>
-            <a href="#">Payment</a>
+
+        </div>
+
+        <div id="box1">
+            <div id="center">
+                <h2>Please enter the OTP <br>
+                    to confirm your order</h2>
+                <p>An OTP has been sent to your mobile no.</p>
+            </div>
+
+            <input type="email" placeholder=" Enter OTP" id="otp">
+            <button>Confirm your Order</button>
+            <div id="whatsapp">
+                <p>Resend OTP on Whatsapp</p>
+            <img src="data:image/png;base64,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" alt="">
+
+
+            </div>
+            
         </div>
         <div id="shipping-info">
+            <h2>Customer information</h2>
+            <label for="">Contact Information</label> 
+            <!-- Append data here -->
+            <p> append email </p>
+            <label for="">Payment Method</label>
+            <p> Cash on Delivery (COD)</p>
+             <label for="">Shipping Address</label>
+             <p> append  address </p>
+             <label for="">Billibg Address</label>
+             <p>  Append address </p>
+
+             <label for="">Shipping method</label>
+             <p>Free Shipping <br>(Cash on Delivery)</p>
+
+
             <div>
-                <!-- bottom border -->
-                <div>
-                    <p>Contact</p>
-                    <!-- email -->
-                    <p>workmailvicky101@gmail.com</p>
-                </div>
-                <hr>
-                <div>
-                    <h3>Shipping method</h3>
-                    <div>
-                        <!-- add radiobutton like image -->
-                        <p><span></span> Standard(3-5 Business Days)</p>
-                        <p>Free</p>
-                    </div>
-                </div>
-                <div>
-                    <a href="#">< Return to information</a>
-                    <button id="shipping-btn">Continue</button>
-                </div>
+
+                <button id="shipping-btn">Continue</button>
             </div>
         </div>
     </div>
     </div>
-    <div id = 'cart'>
+    </div>
+    <div id='cart'>
         <h2>Pay now and get <span>3% instant discount</span></h2>
         <hr>
         <div>
@@ -55,8 +68,8 @@
             </table>
         </div>
         <div>
-           <input type="text" id="discout-code" placeholder="Gift cart or discount code">
-           <button>Apply</button>
+            <input type="text" id="discout-code" placeholder="Gift cart or discount code">
+            <button>Apply</button>
         </div>
         <hr>
         <div id="sub-total">
@@ -71,9 +84,9 @@
         </div>
         <hr>
         <div id="total">
-            
+
             <div>
-               
+
                 <p>Total</p>
                 <p>Including ₹333.99 in taxes</p>
             </div>
@@ -81,13 +94,14 @@
         </div>
     </div>
 </body>
+
 </html>
 
 <script>
-    document.querySelector('#shipping-btn').addEventListener('click',handlePayment);
+    document.querySelector('#shipping-btn').addEventListener('click', handlePayment);
 
 
-    function handlePayment(){
+    function handlePayment() {
         window.location.replace("./payment.html")
     }
 </script>
