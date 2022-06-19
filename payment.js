@@ -58,5 +58,5 @@ function displayData(data) {
 }
 
 function handlePayment() {
-  window.location.replace("./payment.html");
+  window.location.replace("./order-successful.html");
 }
