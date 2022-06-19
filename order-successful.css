@@ -65,6 +65,13 @@ font-size: 12px;
     justify-content: right;
     align-items: center;
 }
+td img{
+    width: 30%;
+}
+tbody td{
+    height: 300px;
+    overflow: scroll;
+}
     
 
 
